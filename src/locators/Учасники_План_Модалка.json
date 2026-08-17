@@ -1,0 +1,13 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionPlan_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionPlan_FormPage/add",
+  "participantModalTitle": "Додати учасника завдання",
+  "modalFormFields": {
+    "Виробниче завдання": "page.getByLabel('Виробниче завдання')",
+    "Співробітник": "page.getByLabel('Співробітник')",
+    "Планова тривалість (хв)": "page.getByLabel('Планова тривалість (хв)')",
+    "Кількість (план, од.)": "page.getByLabel('Кількість (план, од.)')",
+    "Фактична тривалість (хв)": "page.getByLabel('Фактична тривалість (хв)')",
+    "Фактична кількість": "page.getByLabel('Фактична кількість')"
+  }
+}

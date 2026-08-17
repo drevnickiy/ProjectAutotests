@@ -1,0 +1,263 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/Products_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/Products_FormPage/add",
+  "finishedProduct": {
+    "url": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/Products_FormPage/edit/2940574c-0d4f-45f0-a58d-361aefcf9f1d",
+    "categoryName": "Готовий продукт",
+    "tabs": [
+      "ЗАГАЛЬНА ІНФОРМАЦІЯ",
+      "БАЛАНС",
+      "ПОЛІГРАФІЯ ПРОДУКТУ",
+      "ТЕХНОЛОГІЧНА КАРТА",
+      "ХАРАКТЕРИСТИКИ",
+      "ЦІНИ І ЗАЛИШКИ"
+    ],
+    "leftPanelFormFields": {
+      "Назва": "page.getByLabel('Назва')",
+      "Категорія": "page.getByLabel('Категорія')",
+      "Підкатегорія": "page.getByLabel('Підкатегорія')",
+      "Колір": "page.getByLabel('Колір')",
+      "Одиниця виміру": "page.getByLabel('Одиниця виміру')",
+      "Код": "page.getByLabel('Код')",
+      "Партнер": "page.getByLabel('Партнер')",
+      "Метод обліку": "page.getByLabel('Метод обліку')",
+      "Бренд": "page.getByLabel('Бренд')",
+      "Статус продукту": "page.getByLabel('Статус продукту')",
+      "Ціна": "page.getByLabel('Ціна')",
+      "Сировина": "page.getByLabel('Сировина')",
+      "Вихід": "page.getByLabel('Вихід')",
+      "Неактивний": "page.getByLabel('Неактивний')",
+      "Тип": "page.getByLabel('Тип')",
+      "Відповідальний": "page.getByLabel('Відповідальний')",
+      "Термін придатності (днів)": "page.getByLabel('Термін придатності (днів)')",
+      "Тип контролю партії": "page.getByLabel('Тип контролю партії')"
+    },
+    "tabGeneralInfo": {
+      "Посилання": "page.getByLabel('Посилання')",
+      "Короткий опис": "page.getByLabel('Короткий опис')",
+      "Переваги": "page.getByLabel('Переваги')",
+      "Примітки": "page.getByLabel('Примітки')",
+      "Одиниці": "page.getByText('Одиниці', { exact: true })",
+      "Коротка назва": "page.getByText('Коротка назва', { exact: true })",
+      "Базова": "page.getByText('Базова', { exact: true })",
+      "Базові одиниці (кількість)": "page.getByText('Базові одиниці (кількість)', { exact: true })"
+    },
+    "tabBalance": {
+      "Партія": "page.getByText('Партія', { exact: true })",
+      "Термін придатності": "page.getByText('Термін придатності', { exact: true })",
+      "Склад": "page.getByText('Склад', { exact: true })",
+      "Кількість": "page.getByText('Кількість', { exact: true })",
+      "Доступно": "page.getByText('Доступно', { exact: true })"
+    },
+    "tabPolygraphyProduct": {
+      "Етикетка": "page.getByText('Етикетка', { exact: false })"
+    },
+    "tabTechMap": {
+      "Технологічна карта": "page.getByText('Технологічна карта', { exact: false })"
+    },
+    "tabCharacteristics": {
+      "Характеристики": "page.getByText('Характеристики', { exact: false })"
+    },
+    "tabPricesStocks": {
+      "Ціни": "page.getByText('Ціни', { exact: true })",
+      "Прайс-лист": "page.getByText('Прайс-лист', { exact: true })",
+      "Ціна": "page.getByText('Ціна', { exact: true })",
+      "Валюта": "page.getByText('Валюта', { exact: true })",
+      "Податок": "page.getByText('Податок', { exact: true })",
+      "Доступність": "page.getByText('Доступність', { exact: true })",
+      "Склад": "page.getByText('Склад', { exact: true })",
+      "Залишок": "page.getByText('Залишок', { exact: true })",
+      "Резерв": "page.getByText('Резерв', { exact: true })",
+      "Доступно": "page.getByText('Доступно', { exact: true })"
+    }
+  },
+  "wasteProduct": {
+    "url": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/Products_FormPage/edit/b755bc22-e25a-48bd-8636-fceeb10f37c1",
+    "categoryName": "Відходи",
+    "tabs": [
+      "ЗАГАЛЬНА ІНФОРМАЦІЯ",
+      "БАЛАНС",
+      "ПОЛІГРАФІЯ ПРОДУКТУ",
+      "ХАРАКТЕРИСТИКИ",
+      "ЦІНИ І ЗАЛИШКИ"
+    ],
+    "leftPanelFormFields": {
+      "Назва": "page.getByLabel('Назва')",
+      "Категорія": "page.getByLabel('Категорія')",
+      "Підкатегорія": "page.getByLabel('Підкатегорія')",
+      "Колір": "page.getByLabel('Колір')",
+      "Одиниця виміру": "page.getByLabel('Одиниця виміру')",
+      "Код": "page.getByLabel('Код')",
+      "Статус продукту": "page.getByLabel('Статус продукту')",
+      "Відповідальний": "page.getByLabel('Відповідальний')",
+      "Термін придатності (днів)": "page.getByLabel('Термін придатності (днів)')",
+      "Тип контролю партії": "page.getByLabel('Тип контролю партії')"
+    },
+    "tabGeneralInfo": {
+      "Посилання": "page.getByLabel('Посилання')",
+      "Короткий опис": "page.getByLabel('Короткий опис')",
+      "Переваги": "page.getByLabel('Переваги')",
+      "Примітки": "page.getByLabel('Примітки')",
+      "Одиниці": "page.getByText('Одиниці', { exact: true })",
+      "Коротка назва": "page.getByText('Коротка назва', { exact: true })",
+      "Базова": "page.getByText('Базова', { exact: true })",
+      "Базові одиниці (кількість)": "page.getByText('Базові одиниці (кількість)', { exact: true })"
+    },
+    "tabBalance": {
+      "Партія": "page.getByText('Партія', { exact: true })",
+      "Термін придатності": "page.getByText('Термін придатності', { exact: true })",
+      "Склад": "page.getByText('Склад', { exact: true })",
+      "Кількість": "page.getByText('Кількість', { exact: true })",
+      "Доступно": "page.getByText('Доступно', { exact: true })"
+    },
+    "tabPolygraphyProduct": {
+      "Етикетка": "page.getByText('Етикетка', { exact: false })"
+    },
+    "tabCharacteristics": {
+      "Характеристики": "page.getByText('Характеристики', { exact: false })"
+    },
+    "tabPricesStocks": {
+      "Ціни": "page.getByText('Ціни', { exact: true })",
+      "Прайс-лист": "page.getByText('Прайс-лист', { exact: true })",
+      "Ціна": "page.getByText('Ціна', { exact: true })",
+      "Валюта": "page.getByText('Валюта', { exact: true })",
+      "Податок": "page.getByText('Податок', { exact: true })",
+      "Доступність": "page.getByText('Доступність', { exact: true })",
+      "Склад": "page.getByText('Склад', { exact: true })",
+      "Залишок": "page.getByText('Залишок', { exact: true })",
+      "Резерв": "page.getByText('Резерв', { exact: true })",
+      "Доступно": "page.getByText('Доступно', { exact: true })"
+    }
+  },
+  "semiFinishedProduct": {
+    "url": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/Products_FormPage/edit/68c07a2d-6de3-4609-a220-c9289d636bd5",
+    "categoryName": "Напівфабрикат",
+    "tabs": [
+      "БАЛАНС",
+      "ПОЛІГРАФІЯ",
+      "ПОЛІГРАФІЯ ПРОДУКТУ",
+      "ФІЗИКО-ХІМІЧНІ ПОКАЗНИКИ",
+      "ТЕХНОЛОГІЧНА КАРТА",
+      "ЗАКУПІВЛЯ",
+      "ДОКУМЕНТИ",
+      "ХАРАКТЕРИСТИКИ",
+      "ЦІНИ І ЗАЛИШКИ"
+    ],
+    "leftPanelFormFields": {
+      "Назва": "page.getByLabel('Назва')",
+      "Категорія": "page.getByLabel('Категорія')",
+      "Підкатегорія": "page.getByLabel('Підкатегорія')",
+      "Колір": "page.getByLabel('Колір')",
+      "Одиниця виміру": "page.getByLabel('Одиниця виміру')",
+      "Код": "page.getByLabel('Код')",
+      "Статус продукту": "page.getByLabel('Статус продукту')",
+      "Відповідальний": "page.getByLabel('Відповідальний')",
+      "Термін придатності (днів)": "page.getByLabel('Термін придатності (днів)')",
+      "Тип контролю партії": "page.getByLabel('Тип контролю партії')"
+    },
+    "tabBalance": {
+      "Партія": "page.getByText('Партія', { exact: true })",
+      "Термін придатності": "page.getByText('Термін придатності', { exact: true })",
+      "Склад": "page.getByText('Склад', { exact: true })",
+      "Кількість": "page.getByText('Кількість', { exact: true })",
+      "Доступно": "page.getByText('Доступно', { exact: true })",
+      "Одиниця виміру": "page.getByText('Одиниця виміру', { exact: true })"
+    },
+    "tabPolygraphy": {
+      "Артикул": "page.getByLabel('Артикул')",
+      "Вид поліграфії": "page.getByLabel('Вид поліграфії')",
+      "Оглядовий макет": "page.getByLabel('Оглядовий макет')",
+      "Макет до друку": "page.getByLabel('Макет до друку')",
+      "Специфікація етикетка": "page.getByText('Специфікація етикетка', { exact: false })",
+      "Специфікація коробки": "page.getByText('Специфікація коробки', { exact: false })",
+      "Специфікація етикетка (тара)": "page.getByText('Специфікація етикетка (тара)', { exact: false })"
+    },
+    "tabPolygraphyProduct": {
+      "Етикетка": "page.getByText('Етикетка', { exact: false })"
+    },
+    "tabPhysicsChemistry": {
+      "pH": "page.getByLabel('pH')",
+      "Густина": "page.getByLabel('Густина')",
+      "Додаткові показники": "page.getByLabel('Додаткові показники')",
+      "Точка застигання (°C)": "page.getByLabel('Точка застигання (°C)')",
+      "Масова частка сухих речовин (%)": "page.getByLabel('Масова частка сухих речовин (%)')",
+      "Точка помутніння (°C)": "page.getByLabel('Точка помутніння (°C)')",
+      "Температура плавлення/застигання (°C)": "page.getByLabel('Температура плавлення/застигання (°C)')",
+      "Мікробіологічна чистота": "page.getByLabel('Мікробіологічна чистота')",
+      "Кислотне число (мг КОН/г)": "page.getByLabel('Кислотне число (мг КОН/г)')",
+      "Розчинність": "page.getByLabel('Розчинність')",
+      "Пероксидне число (мг КОН/г)": "page.getByLabel('Пероксидне число (мг КОН/г)')",
+      "Йодне число (мг КОН/г)": "page.getByLabel('Йодне число (мг КОН/г)')",
+      "Чистота (%)": "page.getByLabel('Чистота (%)')",
+      "Число омилення (мг КОН/г)": "page.getByLabel('Число омилення (мг КОН/г)')",
+      "Вміст основної речовини (%)": "page.getByLabel('Вміст основної речовини (%)')",
+      "Вологість (%)": "page.getByLabel('Вологість (%)')",
+      "Показник заломлення": "page.getByLabel('Показник заломлення')"
+    },
+    "tabTechMap": {
+      "Технологічна карта": "page.getByText('Технологічна карта', { exact: false })"
+    },
+    "tabProcurement": {
+      "Постачальник": "page.getByText('Постачальник', { exact: true })",
+      "Основний": "page.getByText('Основний', { exact: true })",
+      "Продукт": "page.getByText('Продукт', { exact: true })",
+      "Артикул": "page.getByText('Артикул', { exact: true })",
+      "Одиниця виміру": "page.getByText('Одиниця виміру', { exact: true })",
+      "Ціна за базову одиницю": "page.getByText('Ціна за базову одиницю', { exact: false })",
+      "Фасовка": "page.getByText('Фасовка', { exact: true })",
+      "Договір": "page.getByText('Договір', { exact: true })"
+    },
+    "tabDocuments": {
+      "Креслення на тару/сировину": "page.getByText('Креслення на тару/сировину', { exact: false })",
+      "Макети поліграфії": "page.getByText('Макети поліграфії', { exact: false })"
+    },
+    "tabCharacteristics": {
+      "Вага (грами)": "page.getByLabel('Вага (грами)')",
+      "Глибина (мм)": "page.getByLabel('Глибина (мм)')",
+      "Довжина (мм)": "page.getByLabel('Довжина (мм)')",
+      "Ширина (мм)": "page.getByLabel('Ширина (мм)')",
+      "Термін зберігання": "page.getByLabel('Термін зберігання')",
+      "Основна інформація": "page.getByText('Основна інформація', { exact: false })",
+      "Штрих-код товару": "page.getByLabel('Штрих-код товару')",
+      "Штрих-код упаковки": "page.getByLabel('Штрих-код упаковки')",
+      "Номінальна кількість": "page.getByLabel('Номінальна кількість')",
+      "Запашка": "page.getByLabel('Запашка')",
+      "Колір сировини": "page.getByLabel('Колір сировини')",
+      "Дата затвердження продукту": "page.getByLabel('Дата затвердження продукту')",
+      "Контракт/Mermade": "page.getByLabel('Контракт/Mermade')",
+      "Інформація для етикетки": "page.getByLabel('Інформація для етикетки')",
+      "Відповідність до ТУ": "page.getByLabel('Відповідність до ТУ')",
+      "Умови зберігання": "page.getByLabel('Умови зберігання')",
+      "Сировина": "page.getByText('Сировина', { exact: false })",
+      "CAS-номер": "page.getByLabel('CAS-номер')",
+      "INCI": "page.getByLabel('INCI')",
+      "Група сировини": "page.getByLabel('Група сировини')",
+      "Вид/тип сировини (основна або альтернативна)": "page.getByLabel('Вид/тип сировини (основна або альтернативна)')",
+      "Умови зберігання (температура)": "page.getByLabel('Умови зберігання (температура)')",
+      "Матеріал (пакування/тара)": "page.getByText('Матеріал (пакування/тара)', { exact: false })",
+      "Умови зберігання (вологість)": "page.getByLabel('Умови зберігання (вологість)')",
+      "Тип пакування тари": "page.getByLabel('Тип пакування тари')",
+      "Матеріал тари": "page.getByLabel('Матеріал тари')",
+      "Місткість флакону": "page.getByLabel('Місткість флакону')",
+      "Товщина стінки тари": "page.getByLabel('Товщина стінки тари')",
+      "Тип тари (основна чи альтернативна)": "page.getByLabel('Тип тари (основна чи альтернативна)')",
+      "Герметичність (при повній комплектації)": "page.getByLabel('Герметичність (при повній комплектації)')",
+      "Стійкість на горизонтальній поверхні": "page.getByLabel('Стійкість на горизонтальній поверхні')",
+      "Міцність тари": "page.getByLabel('Міцність тари')",
+      "Характеристики": "page.getByText('Характеристики', { exact: true })",
+      "Значення": "page.getByText('Значення', { exact: true })"
+    },
+    "tabPricesStocks": {
+      "Ціни": "page.getByText('Ціни', { exact: true })",
+      "Прайс-лист": "page.getByText('Прайс-лист', { exact: true })",
+      "Ціна": "page.getByText('Ціна', { exact: true })",
+      "Валюта": "page.getByText('Валюта', { exact: true })",
+      "Податок": "page.getByText('Податок', { exact: true })",
+      "Доступність": "page.getByText('Доступність', { exact: true })",
+      "Склад": "page.getByText('Склад', { exact: true })",
+      "Залишок": "page.getByText('Залишок', { exact: true })",
+      "Резерв": "page.getByText('Резерв', { exact: true })",
+      "Доступно": "page.getByText('Доступно', { exact: true })"
+    }
+  }
+}

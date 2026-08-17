@@ -1,0 +1,44 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionActivity_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionActivity_FormPage/add",
+  "leftPanelFields": {
+    "Статус": "page.getByLabel('Статус')",
+    "Робота": "page.getByLabel('Робота')",
+    "Відповідальний": "page.getByLabel('Відповідальний')",
+    "Етап": "page.getByLabel('Етап')",
+    "Номер етапу": "page.getByLabel('Номер етапу')",
+    "Перерва до наступного завдання (мін, хв)": "page.getByLabel('Перерва до наступного завдання (мін, хв)')",
+    "Перерва до наступного завдання (макс, мін)": "page.getByLabel('Перерва до наступного завдання (макс, мін)')",
+    "Пов'язане завдання": "page.getByLabel('Пов\\'язане завдання')",
+    "Тип ВКЯ": "page.getByLabel('Тип ВКЯ')",
+    "Перевірено ВКЯ": "page.getByLabel('Перевірено ВКЯ')",
+    "Підтверджено ВКЯ": "page.getByLabel('Підтверджено ВКЯ')",
+    "Виробниче завдання": "page.getByLabel('Виробниче завдання')"
+  },
+  "generalInfoTabFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Тривалість (план, хв)": "page.getByLabel('Тривалість (план, хв)')",
+    "Тривалість (загальна, хв)": "page.getByLabel('Тривалість (загальна, хв)')",
+    "Кількість (план)": "page.getByLabel('Кількість (план)')",
+    "Кількість (факт)": "page.getByLabel('Кількість (факт)')",
+    "Час початку": "page.getByLabel('Час початку')",
+    "Час завершення": "page.getByLabel('Час завершення')",
+    "Опис": "page.getByLabel('Опис')",
+    "Зміна": "page.getByLabel('Зміна')"
+  },
+  "participantsTableColumns": {
+    "Учасник виробничого завдання": "page.getByText('Учасник виробничого завдання', { exact: true })",
+    "Співробітник": "page.getByText('Співробітник', { exact: true })",
+    "Фактична тривалість (хв)": "page.getByText('Фактична тривалість (хв)', { exact: true })",
+    "Планова тривалість (хв)": "page.getByText('Планова тривалість (хв)', { exact: true })",
+    "Кількість (план, од.)": "page.getByText('Кількість (план, од.)', { exact: true })",
+    "Фактична кількість": "page.getByText('Фактична кількість', { exact: true })",
+    "Посада": "page.getByText('Посада', { exact: true })",
+    "Розрахунок зарплати": "page.getByText('Розрахунок зарплати', { exact: true })",
+    "Ставка": "page.getByText('Ставка', { exact: true })"
+  },
+  "vkyTableColumns": {
+    "Фактичне ВКЯ": "page.getByText('Фактичне ВКЯ', { exact: true })",
+    "Плановий показник ВКЯ": "page.getByText('Плановий показник ВКЯ', { exact: true })"
+  }
+}

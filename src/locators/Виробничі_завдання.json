@@ -1,0 +1,89 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionActivity_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionActivity_FormPage/add",
+  "registryColumns": {
+    "Назва": "page.getByText('Назва', { exact: true })",
+    "Відповідальний": "page.getByText('Відповідальний', { exact: true })",
+    "Дата початку": "page.getByText('Дата початку', { exact: true })",
+    "Тривалість (хв)": "page.getByText('Тривалість (хв)', { exact: true })",
+    "Кількість (план)": "page.getByText('Кількість (план)', { exact: true })",
+    "Етап": "page.getByText('Етап', { exact: true })"
+  },
+  "cardFormFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Відповідальний": "page.getByLabel('Відповідальний')",
+    "Етап": "page.getByLabel('Етап')",
+    "Час початку": "page.getByLabel('Час початку')",
+    "Виробниче завдання": "page.getByLabel('Виробниче завдання')"
+  },
+  "leftPanelFields": {
+    "Статус": "page.getByLabel('Статус')",
+    "Робота": "page.getByLabel('Робота')",
+    "Відповідальний": "page.getByLabel('Відповідальний')",
+    "Етап": "page.getByLabel('Етап')",
+    "Номер етапу": "page.getByLabel('Номер етапу')",
+    "Виробниче замовлення": "page.getByLabel('Виробниче замовлення')",
+    "Обладнання": "page.getByLabel('Обладнання')",
+    "Перерва до наступного завдання (мін)": "page.getByLabel('Перерва до наступного завдання (мі')",
+    "Перерва до наступного завдання (макс)": "page.getByLabel('Перерва до наступного завдання (ма')",
+    "Пов'язане завдання": "page.getByLabel('Пов\\'язане завдання')",
+    "Тип ВКЯ": "page.getByLabel('Тип ВКЯ')",
+    "Перевірено ВКЯ": "page.getByLabel('Перевірено ВКЯ')",
+    "Підтверджено ВКЯ": "page.getByLabel('Підтверджено ВКЯ')"
+  },
+  "generalInfoTabFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Тривалість (план, хв)": "page.getByLabel('Тривалість (план, хв)')",
+    "Тривалість (загальна, хв)": "page.getByLabel('Тривалість (загальна, хв)')",
+    "Кількість (план)": "page.getByLabel('Кількість (план)')",
+    "Кількість (факт)": "page.getByLabel('Кількість (факт)')",
+    "Час початку": "page.getByLabel('Час початку')",
+    "Час завершення": "page.getByLabel('Час завершення')",
+    "Опис": "page.getByLabel('Опис')",
+    "Зміна": "page.getByLabel('Зміна')"
+  },
+  "participantsTableColumns": {
+    "Учасник виробничого завдання": "page.getByText('Учасник виробничого завдання')",
+    "Співробітник": "page.getByText('Співробітник')",
+    "Посада": "page.getByText('Посада')",
+    "Розрахунок зарплати": "page.getByText('Розрахунок зарплати')",
+    "Ставка": "page.getByText('Ставка')"
+  },
+  "vkyTableColumns": {
+    "Фактичне ВКЯ": "page.getByText('Фактичне ВКЯ')",
+    "Виробниче завдання": "page.getByText('Виробниче завдання')",
+    "Назва (ВКЯ)": "page.getByText('Назва')",
+    "Плановий показник": "page.getByText('Плановий показник')"
+  },
+  "qualityControlResultsCard": {
+    "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenPageQualityControlResults/add",
+    "stages": {
+      "Не розпочато": "page.getByText('Не розпочато')",
+      "В роботі": "page.getByText('В роботі')",
+      "Завершено": "page.getByText('Завершено')"
+    },
+    "leftPanelFields": {
+      "Назва": "page.getByLabel('Назва')",
+      "Відповідальний": "page.getByLabel('Відповідальний')",
+      "Тип ВКЯ": "page.getByLabel('Тип ВКЯ')",
+      "Час початку": "page.getByLabel('Час початку')",
+      "Час завершення": "page.getByLabel('Час завершення')",
+      "Виробниче замовлення": "page.getByLabel('Виробниче замовлення')",
+      "Тип виробничих завдань": "page.getByLabel('Тип виробничих завдань')",
+      "Пов'язане завдання": "page.getByLabel('Пов\\'язане завдання')"
+    },
+    "generalInfoTabFields": {
+      "Результат перевірки": "page.getByLabel('Результат перевірки')",
+      "Статус": "page.getByLabel('Статус')",
+      "Коментар до обслуговування": "page.getByLabel('Коментар до обслуговування')"
+    },
+    "vkyFactTableColumns": {
+      "Фактичне ВКЯ": "page.getByText('Фактичне ВКЯ', { exact: true })",
+      "Планове значення": "page.getByText('Планове значення')",
+      "Коментар": "page.getByText('Коментар')",
+      "Одиниці виміру": "page.getByText('Одиниці виміру')",
+      "Показник": "page.getByText('Показник')",
+      "Плановий показник": "page.getByText('Плановий показник')"
+    }
+  }
+}

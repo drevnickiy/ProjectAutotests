@@ -1,0 +1,34 @@
+{
+  "name": "xlab",
+  "version": "1.0.0",
+  "description": "E2E Automated Testing Suite with Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "editor": "ts-node src/server/editorServer.ts",
+    "report:generate": "ts-node src/utils/generateAndSendReport.ts",
+    "scan": "ts-node src/utils/scanFields.ts"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "typescript",
+    "e2e"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^8.0.1",
+    "nodemailer": "^9.0.3"
+  }
+}

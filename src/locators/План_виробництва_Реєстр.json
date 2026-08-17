@@ -1,0 +1,22 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionPlan_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionPlan_FormPage/add",
+  "S": "page.getByRole('button', { name: 'Сортувати S' })",
+  "Всі застосунки": "page.getByRole('button', { name: 'Сортувати Всі застосунки' })",
+  "Додати": "page.getByRole('button', { name: 'Сортувати Додати' })",
+  "Імпорт": "page.getByRole('button', { name: 'Сортувати Імпорт' })",
+  "Тег": "page.getByRole('button', { name: 'Сортувати Тег' })",
+  "Підсумки": "page.getByRole('button', { name: 'Сортувати Підсумки' })",
+  "Управління рядками": "page.getByText('Управління рядками', { exact: true })",
+  "Назва": "page.getByText('Назва', { exact: true })",
+  "Рік": "page.getByText('Рік', { exact: true })",
+  "Місяць": "page.getByText('Місяць', { exact: true })",
+  "Бренд": "page.getByText('Бренд', { exact: true })",
+  "Статус": "page.getByText('Статус', { exact: true })",
+  "Попередній місяць": "page.getByText('Попередній місяць', { exact: true })",
+  "Наступний місяць": "page.getByText('Наступний місяць', { exact: true })",
+  "Загальний відсоток очікуваного приросту": "page.getByText('Загальний відсоток очікуваного приросту', { exact: true })",
+  "Загальний поріг ризику низького запасу": "page.getByText('Загальний поріг ризику низького запасу', { exact: true })",
+  "Загальний поріг потреби": "page.getByText('Загальний поріг потреби', { exact: true })",
+  "Детальний опис": "page.getByText('Детальний опис', { exact: true })"
+}

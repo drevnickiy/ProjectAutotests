@@ -1,0 +1,43 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenServiceTasks_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenServiceTasks_FormPage/add",
+  "leftPanelFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Зміна": "page.getByLabel('Зміна')",
+    "Тривалість (план, хв)": "page.getByLabel('Тривалість (план, хв)')",
+    "Опис": "page.getByLabel('Опис')",
+    "Етап": "page.getByLabel('Етап')",
+    "Виробнича лінія": "page.getByLabel('Виробнича лінія')",
+    "Виробниче замовлення": "page.getByLabel('Виробниче замовлення')",
+    "Обладнання": "page.getByLabel('Обладнання')",
+    "Номер етапу": "page.getByLabel('Номер етапу')",
+    "Час початку": "page.getByLabel('Час початку')",
+    "Час завершення": "page.getByLabel('Час завершення')",
+    "Фактична тривалість (хв)": "page.getByLabel('Фактична тривалість (хв)')",
+    "Тривалість (загальна, хв)": "page.getByLabel('Тривалість (загальна, хв)')",
+    "Обов'язкове": "page.getByLabel('Обов\\'язкове')",
+    "Підтверджено ВКЯ": "page.getByLabel('Підтверджено ВКЯ')",
+    "Учасник виробничого завдання (Назва)": "page.getByLabel('Учасник виробничого завдання')"
+  },
+  "generalInfoTabFields": {
+    "Код обладнання": "page.getByLabel('Код обладнання')",
+    "Співробітник": "page.getByLabel('Співробітник')",
+    "Номер обладнання": "page.getByLabel('Номер обладнання')",
+    "Примітка": "page.getByLabel('Примітка')",
+    "Вид обробки": "page.getByLabel('Вид обробки')"
+  },
+  "participantsTableColumns": {
+    "Учасник виробничого завдання": "page.getByText('Учасник виробничого завдання', { exact: true })",
+    "Створив": "page.getByText('Створив', { exact: true })"
+  },
+  "vkyTableColumns": {
+    "Фактичне ВКЯ": "page.getByText('Фактичне ВКЯ', { exact: true })",
+    "Назва (ВКЯ)": "page.getByText('Назва', { exact: true })",
+    "Виробниче завдання (ВКЯ)": "page.getByText('Виробниче завдання', { exact: true })",
+    "Плановий показник ВКЯ": "page.getByText('Плановий показник ВКЯ', { exact: true })"
+  },
+  "taskTableColumns": {
+    "Виробниче завдання (Раздел)": "page.getByText('Виробниче завдання', { exact: true })",
+    "Назва (Завдання)": "page.getByText('Назва', { exact: true })"
+  }
+}

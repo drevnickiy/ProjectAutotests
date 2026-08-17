@@ -1,0 +1,18 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionCalculat_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionCalculat_FormPage/add",
+  "S": "page.getByRole('button', { name: 'Сортувати S' })",
+  "Всі застосунки": "page.getByRole('button', { name: 'Сортувати Всі застосунки' })",
+  "Додати": "page.getByRole('button', { name: 'Сортувати Додати' })",
+  "Імпорт": "page.getByRole('button', { name: 'Сортувати Імпорт' })",
+  "Тег": "page.getByRole('button', { name: 'Сортувати Тег' })",
+  "Підсумки": "page.getByRole('button', { name: 'Сортувати Підсумки' })",
+  "Управління рядками": "page.getByText('Управління рядками', { exact: true })",
+  "Назва": "page.getByText('Назва', { exact: true })",
+  "Дата початку періоду": "page.getByText('Дата початку періоду', { exact: true })",
+  "Дата завершення періоду": "page.getByText('Дата завершення періоду', { exact: true })",
+  "Статус розрахунку виробництва": "page.getByText('Статус розрахунку виробництва', { exact: true })",
+  "Дата блокування": "page.getByText('Дата блокування', { exact: true })",
+  "Дата останнього оновлення": "page.getByText('Дата останнього оновлення', { exact: true })",
+  "Новий": "page.getByRole('button', { name: 'Сортувати Новий' })"
+}

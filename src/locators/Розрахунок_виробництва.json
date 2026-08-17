@@ -1,0 +1,35 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionCalculat_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionCalculat_FormPage/add",
+  "registryColumns": {
+    "Назва": "page.getByText('Назва', { exact: true })",
+    "Дата початку періоду": "page.getByText('Дата початку періоду', { exact: true })",
+    "Дата завершення періоду": "page.getByText('Дата завершення періоду', { exact: true })",
+    "Статус розрахунку виробництва": "page.getByText('Статус розрахунку виробництва', { exact: true })",
+    "Дата блокування": "page.getByText('Дата блокування', { exact: true })",
+    "Дата останнього оновлення": "page.getByText('Дата останнього оновлення', { exact: true })"
+  },
+  "leftPanelFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Дата останнього оновлення": "page.getByLabel('Дата останнього оновлення')",
+    "Статус розрахунку виробництва": "page.getByLabel('Статус розрахунку виробництва')",
+    "Дата початку періоду": "page.getByLabel('Дата початку періоду')",
+    "Дата завершення періоду": "page.getByLabel('Дата завершення періоду')",
+    "Дата блокування": "page.getByLabel('Дата блокування')"
+  },
+  "tab1ProductionPlanColumns": {
+    "План виробництва": "page.getByText('План виробництва', { exact: true })",
+    "Назва": "page.getByText('Назва', { exact: true })",
+    "Дата початку періоду": "page.getByText('Дата початку періоду', { exact: true })",
+    "Дата завершення періоду": "page.getByText('Дата завершення періоду', { exact: true })",
+    "Статус": "page.getByText('Статус', { exact: true })"
+  },
+  "tab2ProductsCalculationColumns": {
+    "Продукти розрахунку виробництва": "page.getByText('Продукти розрахунку виробництва', { exact: true })",
+    "Дата створення": "page.getByText('Дата створення', { exact: true })",
+    "Продукт": "page.getByText('Продукт', { exact: true })",
+    "Кількість до виробництва": "page.getByText('Кількість до виробництва', { exact: true })",
+    "Планування ГП": "page.getByText('Планування ГП', { exact: true })",
+    "Контрактне замовлення": "page.getByText('Контрактне замовлення', { exact: true })"
+  }
+}

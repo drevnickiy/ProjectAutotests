@@ -1,0 +1,54 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenWarehouseDocument_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenWarehouseDocument_FormPage/add",
+  "registryColumns": {
+    "Номер": "page.getByText('Номер', { exact: true })",
+    "Дата складського документа": "page.getByText('Дата складського документа', { exact: true })",
+    "Тип": "page.getByText('Тип', { exact: true })",
+    "Статус": "page.getByText('Статус', { exact: true })",
+    "Контрагент": "page.getByText('Контрагент', { exact: true })",
+    "Початковий склад": "page.getByText('Початковий склад', { exact: true })",
+    "Цільовий склад": "page.getByText('Цільовий склад', { exact: true })"
+  },
+  "leftPanelFormFields": {
+    "Номер документа": "page.getByLabel('Номер документа')",
+    "Тип документа": "page.getByLabel('Тип документа')",
+    "Тип базового документа": "page.getByLabel('Тип базового документа')",
+    "Базовий документ": "page.getByLabel('Базовий документ')",
+    "Дата складського документа": "page.getByLabel('Дата складського документа')",
+    "Створив": "page.getByLabel('Створив')",
+    "Дата створення": "page.getByLabel('Дата створення')",
+    "Статус": "page.getByLabel('Статус')",
+    "Коригування": "page.getByLabel('Коригування')"
+  },
+  "tabs": [
+    "Загальна інформація",
+    "Складська операція",
+    "Історія"
+  ],
+  "tabGeneralInfo": {
+    "Контрагент": "page.getByLabel('Контрагент')",
+    "Відповідальний": "page.getByLabel('Відповідальний')",
+    "Коментар": "page.getByLabel('Коментар')",
+    "Продукт складського документа": "page.getByText('Продукт складського документа', { exact: false })",
+    "Продукт": "page.getByText('Продукт', { exact: true })",
+    "Партія": "page.getByText('Партія', { exact: true })",
+    "Кількість": "page.getByText('Кількість', { exact: true })",
+    "Сума": "page.getByText('Сума', { exact: true })",
+    "Одиниця виміру": "page.getByText('Одиниця виміру', { exact: true })",
+    "Склад-джерело": "page.getByText('Склад-джерело', { exact: true })",
+    "Склад-призначення": "page.getByText('Склад-призначення', { exact: true })"
+  },
+  "tabWarehouseOperation": {
+    "Складські операції": "page.getByText('Складські операції', { exact: false })",
+    "Номер": "page.getByText('Номер', { exact: true })",
+    "Склад": "page.getByText('Склад', { exact: true })",
+    "Дата": "page.getByText('Дата', { exact: true })"
+  },
+  "tabHistory": {
+    "Історія зміни статусу складського документа": "page.getByText('Історія зміни статусу складського документа', { exact: false })",
+    "Автор": "page.getByText('Автор', { exact: true })",
+    "Дата/Час": "page.getByText('Дата/Час', { exact: true })",
+    "Статус": "page.getByText('Статус', { exact: true })"
+  }
+}

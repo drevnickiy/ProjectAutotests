@@ -1,0 +1,31 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/Products_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/Products_FormPage/add",
+  "registryColumns": {
+    "Назва": "page.getByText('Назва', { exact: true })",
+    "Категорія": "page.getByText('Категорія', { exact: true })",
+    "Одиниця виміру": "page.getByText('Одиниця виміру', { exact: true })",
+    "Внутрішній EAN": "page.getByText('Внутрішній EAN', { exact: true })",
+    "Офіційний EAN": "page.getByText('Офіційний EAN', { exact: true })",
+    "Відходи, що не підлягають переробці": "page.getByText('Відходи, що не підлягають переробці', { exact: true })",
+    "Відходи, що підлягають переробці": "page.getByText('Відходи, що підлягають переробці', { exact: true })",
+    "Вихід": "page.getByText('Вихід', { exact: true })",
+    "Категорія продукту": "page.getByText('Категорія продукту', { exact: true })",
+    "Код": "page.getByText('Код', { exact: true })"
+  },
+  "cardFormFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Категорія": "page.getByLabel('Категорія')",
+    "Одиниця виміру": "page.getByLabel('Одиниця виміру')",
+    "Внутрішній EAN": "page.getByLabel('Внутрішній EAN')",
+    "Офіційний EAN": "page.getByLabel('Офіційний EAN')",
+    "Відходи, що не підлягають переробці": "page.getByLabel('Відходи, що не підлягають переробці')",
+    "Відходи, що підлягають переробці": "page.getByLabel('Відходи, що підлягають переробці')",
+    "Вихід": "page.getByLabel('Вихід')",
+    "Категорія продукту": "page.getByLabel('Категорія продукту')",
+    "Код": "page.getByLabel('Код')",
+    "Термін придатності (днів)": "page.getByLabel('Термін придатності (днів)')",
+    "Тип контролю партії": "page.getByLabel('Тип контролю партії')",
+    "Приховати відходи": "page.getByLabel('Приховати відходи')"
+  }
+}

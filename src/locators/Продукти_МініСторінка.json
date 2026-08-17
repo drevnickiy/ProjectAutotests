@@ -1,0 +1,20 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/Products_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/Products_FormPage/add",
+  "productsMiniPageModalTitle": "Додати продукт",
+  "modalFormFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Код": "page.getByLabel('Код')",
+    "Категорія продукту": "page.getByLabel('Категорія продукту')",
+    "Категорія": "page.getByLabel('Категорія')",
+    "Одиниця виміру": "page.getByLabel('Одиниця виміру')",
+    "Внутрішній EAN": "page.getByLabel('Внутрішній EAN')",
+    "Офіційний EAN": "page.getByLabel('Офіційний EAN')",
+    "Відходи, що не підлягають переробці": "page.getByLabel('Відходи, що не підлягають переробці')",
+    "Відходи, що підлягають переробці": "page.getByLabel('Відходи, що підлягають переробці')",
+    "Вихід": "page.getByLabel('Вихід')",
+    "Термін придатності (днів)": "page.getByLabel('Термін придатності (днів)')",
+    "Тип контролю партії": "page.getByLabel('Тип контролю партії')",
+    "Приховати відходи": "page.getByLabel('Приховати відходи')"
+  }
+}

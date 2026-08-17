@@ -1,0 +1,230 @@
+{
+  "config": {
+    "configFile": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/playwright.config.ts",
+    "rootDir": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/e2e",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/src/utils/globalSetup.ts",
+    "globalTeardown": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/src/utils/generateAndSendReport.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "1. Глобальная однократная авторизация и сохранение токена/сессии",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19453,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\n🔑 [Auth Setup] Однократный запуск логина и сохранение storageState.json...\n"
+                    },
+                    {
+                      "text": "[Auth] Форма входа обнаружена. Выполняем авторизацию...\n"
+                    },
+                    {
+                      "text": "✅ [Auth Setup] Сессия и токены успешно сохранены в: /Users/bogdansunday/Desktop/IdeaProjects/Xlab/storageState.json\n\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-17T10:51:24.153Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/test-results/auth.setup.ts-1-Глобальная-c3381--и-сохранение-токена-сессии-setup/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-720dbb9972ccfd797f43",
+          "file": "auth.setup.ts",
+          "line": 7,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "genProductionRoutingValidation.spec.ts",
+      "file": "genProductionRoutingValidation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Модульные авто-тесты валидации раздела Технологічні карти (GenProductionRouting)",
+          "file": "genProductionRoutingValidation.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "15. Заполнение тестовыми данными этапов и заданий для продукта \"ТК-GP-005 Гель для душу\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 48296,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[Auth] Сессия уже активна (storageState), форма входа пропущена.\n"
+                        },
+                        {
+                          "text": "[Test] Создание этапа 1: Приготування маси гелю (ТК-GP-005)...\n"
+                        },
+                        {
+                          "text": "[Test] Создание задания для этапа 1: Змішування ПАР та загусника (Тип: Виробниче завдання, Обладнання: Змішувач)...\n"
+                        },
+                        {
+                          "text": "[Test] Создание этапа 2: Розлив у флакони 400мл (ТК-GP-005)...\n"
+                        },
+                        {
+                          "text": "[Test] Создание задания для этапа 2: Автоматичний розлив у флакони (Тип: Виробниче завдання, Обладнання: Фасування)...\n"
+                        },
+                        {
+                          "text": "[Test] Создание этапа 3: Сервісне обслуговування обладнання...\n"
+                        },
+                        {
+                          "text": "[Test] Создание задания для этапа 3: Санітарна обробка та мийка ліній (Тип: Сервісне завдання, Обладнання: Змішувач)...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-17T10:51:44.641Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/bogdansunday/Desktop/IdeaProjects/Xlab/test-results/genProductionRoutingValida-86e09-та-ТК-GP-005-Гель-для-душу--chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a8833d8fc37fd3ff9d71-5abf54987052678134d5",
+              "file": "genProductionRoutingValidation.spec.ts",
+              "line": 931,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-17T10:51:23.609Z",
+    "duration": 69850.563,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

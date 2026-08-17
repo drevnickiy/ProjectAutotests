@@ -1,0 +1,33 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionPlan_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionPlan_FormPage/add",
+  "modalTitle": "Оберіть поле",
+  "modalSubTitle": "Виробниче завдання",
+  "searchInput": "page.getByPlaceholder('Пошук')",
+  "tabs": {
+    "ПОЛЯ ОБ'ЄКТА ВИРОБНИЧЕ ЗАВДАННЯ": "page.getByText('ПОЛЯ ОБ\\'ЄКТА ВИРОБНИЧЕ ЗАВДАННЯ', { exact: true })",
+    "ПОВ'ЯЗАНІ ОБ'ЄКТИ": "page.getByText('ПОВ\\'ЯЗАНІ ОБ\\'ЄКТИ', { exact: true })"
+  },
+  "listItems": {
+    "Id": "page.getByText('Id', { exact: true })",
+    "Вид обробки": "page.getByText('Вид обробки', { exact: true })",
+    "Виробнича лінія": "page.getByText('Виробнича лінія', { exact: true })",
+    "Виробниче замовлення": "page.getByText('Виробниче замовлення', { exact: true })",
+    "Відповідальний": "page.getByText('Відповідальний', { exact: true })",
+    "Відповідальний за обслуговування": "page.getByText('Відповідальний за обслуговування', { exact: true })",
+    "Дата зміни": "page.getByText('Дата зміни', { exact: true })",
+    "Дата створення": "page.getByText('Дата створення', { exact: true })",
+    "Етап": "page.getByText('Етап', { exact: true })",
+    "Зміна": "page.getByText('Зміна', { exact: true })",
+    "Змінив": "page.getByText('Змінив', { exact: true })",
+    "Категорія обслуговування": "page.getByText('Категорія обслуговування', { exact: true })",
+    "Кількість (план)": "page.getByText('Кількість (план)', { exact: true })",
+    "Кількість (факт)": "page.getByText('Кількість (факт)', { exact: true })",
+    "Код обладнання": "page.getByText('Код обладнання', { exact: true })",
+    "Коментар до обслуговування": "page.getByText('Коментар до обслуговування', { exact: true })"
+  },
+  "actionButtons": {
+    "Скасувати": "page.getByRole('button', { name: 'Скасувати' })",
+    "Вибрати": "page.getByRole('button', { name: 'Вибрати' })"
+  }
+}

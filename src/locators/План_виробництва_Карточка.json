@@ -1,0 +1,36 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionPlan_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionPlan_FormPage/add",
+  "formFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Рік": "page.getByLabel('Рік')",
+    "Місяць": "page.getByLabel('Місяць')",
+    "Бренд": "page.getByLabel('Бренд')",
+    "Відсоток очікуваного приросту": "page.getByLabel('Відсоток очікуваного приросту')",
+    "Поріг ризику низького запасу": "page.getByLabel('Поріг ризику низького запасу')",
+    "Поріг потреби": "page.getByLabel('Поріг потреби')",
+    "Попередній місяць": "page.getByLabel('Попередній місяць')",
+    "Наступний місяць": "page.getByLabel('Наступний місяць')",
+    "Є продукти масмаркету (системне)": "page.getByLabel('Є продукти масмаркету (системне)')"
+  },
+  "gridColumns": {
+    "Продукт": "page.getByText('Продукт', { exact: true })",
+    "Мін партія": "page.getByText('Мін партія', { exact: true })",
+    "Мін залишок": "page.getByText('Мін залишок', { exact: true })",
+    "Мін залишок, міс": "page.getByText('Мін залишок, міс', { exact: true })",
+    "Середнє відвантаження (3 міс.)": "page.getByText('Середнє відвантаження (3 міс.)', { exact: true })",
+    "Залишок фактичний": "page.getByText('Залишок фактичний', { exact: true })",
+    "Борг попереднього періоду": "page.getByText('Борг попереднього періоду', { exact: true })",
+    "Залишок розрахований": "page.getByText('Залишок розрахований', { exact: true })",
+    "Очікувані середньомісячні продажі": "page.getByText('Очікувані середньомісячні продажі', { exact: true })",
+    "Відсоток очікуваного приросту продажів": "page.getByText('Відсоток очікуваного приросту продажів', { exact: true })",
+    "Запас, днів": "page.getByText('Запас, днів', { exact: true })",
+    "Поріг ризику низького запасу": "page.getByText('Поріг ризику низького запасу', { exact: true })",
+    "Поріг потреби": "page.getByText('Поріг потреби', { exact: true })",
+    "Потреба": "page.getByText('Потреба', { exact: true })",
+    "Замовлення": "page.getByText('Замовлення', { exact: true })",
+    "Коригування замовлення": "page.getByText('Коригування замовлення', { exact: true })",
+    "Коментар": "page.getByText('Коментар', { exact: true })",
+    "Артикул": "page.getByText('Артикул', { exact: true })"
+  }
+}

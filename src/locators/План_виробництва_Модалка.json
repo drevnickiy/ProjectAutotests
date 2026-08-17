@@ -1,0 +1,22 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionPlan_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionPlan_FormPage/add",
+  "Field_1": "page.getByLabel('Field_1')",
+  "Пошук...": "#mat-input-0",
+  "Пошук застосунку...": "#mat-input-1",
+  "Field_4": "page.getByLabel('Field_4')",
+  "Тег": "#\\39 7e27be8-9598-b858-5d66-812411195d39",
+  "Пошук": "#mat-input-2",
+  "Вибрати все": "#mat-mdc-checkbox-1-input",
+  "Виберіть рядок": "#mat-mdc-checkbox-2-input",
+  "Рік": "#\\33 35bfbd5-cebf-5e05-0865-f385ac45f2c8",
+  "Рік_1": "#ComboBox_djjubxg",
+  "Місяць": "#eaffc070-949d-1c05-438e-893be912a9a9",
+  "Рік_2": "#ComboBox_c9s3kbk",
+  "Бренд": "#ea23833b-7fbc-951b-3778-5331906e6b42",
+  "Загальний відсоток очікуваного приросту": "#\\38 35d29bd-90a0-51b5-eeb6-16b14722fb1d",
+  "Загальний поріг ризику низького запасу": "#ca2473d8-e1e9-8a08-f17d-2e758509cbcd",
+  "Загальний поріг потреби": "#\\37 85c1e93-6e76-0c9e-a57c-488d38a7aee5",
+  "Планування готової продукції": "page.getByLabel('Планування готової продукції')",
+  "Додавання плану готової продукції": "page.getByLabel('Додавання плану готової продукції')"
+}

@@ -1,0 +1,26 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenContractOrder_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenContractOrder_FormPage/add",
+  "registryColumns": {
+    "Назва": "page.getByRole('button', { name: 'Сортувати Назва' })",
+    "Дата створення": "page.getByRole('button', { name: 'Сортувати Дата створення' })",
+    "Контрагент": "page.getByRole('button', { name: 'Сортувати Контрагент' })",
+    "Планова дата виконання": "page.getByRole('button', { name: 'Сортувати Планова дата виконання' })",
+    "Фактична дата виконання": "page.getByRole('button', { name: 'Сортувати Фактична дата виконання' })"
+  },
+  "leftPanelFormFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Дата створення": "page.getByLabel('Дата створення')",
+    "Контрагент": "page.getByLabel('Контрагент')",
+    "Планова дата виконання": "page.getByLabel('Планова дата виконання')",
+    "Фактична дата виконання": "page.getByLabel('Фактична дата виконання')"
+  },
+  "tabGeneralInfo": {
+    "Продукти у контрактному замовленні": "page.getByText('Продукти у контрактному замовленні')",
+    "Продукт": "page.getByText('Продукт')",
+    "Технологічна карта": "page.getByText('Технологічна карта')",
+    "Кількість": "page.getByText('Кількість')",
+    "Одиниця виміру": "page.getByText('Одиниця виміру')",
+    "Коментар": "page.getByText('Коментар')"
+  }
+}

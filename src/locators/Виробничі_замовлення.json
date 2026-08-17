@@ -1,0 +1,110 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionTask_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionTask_FormPage/add",
+  "registryColumns": {
+    "Назва": "page.getByText('Назва', { exact: true })",
+    "Дата створення": "page.getByText('Дата створення', { exact: true })",
+    "Створив": "page.getByText('Створив', { exact: true })",
+    "Батьківське виробниче замовлення": "page.getByText('Батьківське виробниче замовлення', { exact: true })",
+    "Агрегуюче замовлення": "page.getByText('Агрегуюче замовлення', { exact: true })",
+    "Об’єднати": "page.getByText('Об’єднати', { exact: true })"
+  },
+  "leftPanelFormFields": {
+    "Кількість (факт / план)": "page.locator('crt-indicator, crt-gauge, .crt-indicator, mat-card').first()",
+    "Назва": "page.getByLabel('Назва')",
+    "Починаючи з": "page.getByLabel('Починаючи з')",
+    "Статус": "page.getByLabel('Статус')",
+    "Пріоритет": "page.getByLabel('Пріоритет')",
+    "Батьківське виробниче замовлення": "page.getByLabel('Батьківське виробниче замовлення')",
+    "Планувати разом з батьківським замовленням": "page.getByLabel('Планувати разом з батьківським зам')",
+    "Показувати активності на обладнанні": "page.getByLabel('Показувати активності на обладнанні')",
+    "Стан групування": "page.getByLabel('Стан групування')",
+    "Агрегуюче замовлення": "page.getByLabel('Агрегуюче замовлення')"
+  },
+  "tab1MainInfo": {
+    "subSectionFields": {
+      "До виробництва": "page.getByLabel('До виробництва')",
+      "Кількість (план)": "page.getByLabel('Кількість (план)')",
+      "Кількість (факт)": "page.getByLabel('Кількість (факт)')",
+      "Одиниця продукції": "page.getByLabel('Одиниця продукції')",
+      "Кількість (факт / план, %)": "page.getByLabel('Кількість (факт / план, %)')",
+      "План виробництва": "page.getByLabel('План виробництва')",
+      "Технологічна карта": "page.getByLabel('Технологічна карта')"
+    },
+    "etapyColumns": {
+      "Номер": "page.getByText('Номер', { exact: true })",
+      "Дата початку": "page.getByText('Дата початку', { exact: true })",
+      "Дата завершення": "page.getByText('Дата завершення', { exact: true })",
+      "Тривалість (год.)": "page.getByText('Тривалість (год.)', { exact: true })",
+      "Тривалість (хв)": "page.getByText('Тривалість (хв)', { exact: true })"
+    },
+    "taskColumns": {
+      "Номер етапу": "page.getByText('Номер етапу', { exact: true })",
+      "Назва": "page.getByText('Назва', { exact: true })",
+      "Етап": "page.getByText('Етап', { exact: true })",
+      "Час початку": "page.getByText('Час початку', { exact: true })",
+      "Час завершення": "page.getByText('Час завершення', { exact: true })",
+      "Статус": "page.getByText('Статус', { exact: true })"
+    }
+  },
+  "tab2Calculations": {
+    "materialsFields": {
+      "Вартість (сировини) матеріалів (план)": "page.getByLabel('Вартість (сировини) матеріалів (план)')",
+      "Вартість (сировини) матеріалів (факт)": "page.getByLabel('Вартість (сировини) матеріалів (факт)')",
+      "(Сировина) матеріали (факт / план, %)": "page.getByLabel('(Сировина) матеріали (факт / план, %)')"
+    },
+    "wasteFields": {
+      "Сума вартості відходів (план)": "page.getByLabel('Сума вартості відходів (план)')",
+      "Вартість відходів (факт)": "page.getByLabel('Вартість відходів (факт)')",
+      "Відходи (факт / план, %)": "page.getByLabel('Відходи (факт / план, %)')",
+      "Відходи до (сировини) матеріалів, %": "page.getByLabel('Відходи до (сировини) матеріалів, %')"
+    },
+    "salaryFields": {
+      "Заробітна плата (план)": "page.getByLabel('Заробітна плата (план)')",
+      "Заробітна плата (факт)": "page.getByLabel('Заробітна плата (факт)')",
+      "Заробітна плата (факт / план, %)": "page.getByLabel('Заробітна плата (факт / план, %)')"
+    },
+    "equipmentFields": {
+      "Витрати на обладнання (план)": "page.getByLabel('Витрати на обладнання (план)')",
+      "Вартість обладнання (факт)": "page.getByLabel('Вартість обладнання (факт)')",
+      "Витрати на обладнання (факт / план, %)": "page.getByLabel('Витрати на обладнання (факт / план, %)')"
+    },
+    "materialsTableColumns": {
+      "Сировина": "page.getByText('Сировина', { exact: true })",
+      "Кількість на одиницю": "page.getByText('Кількість на одиницю', { exact: true })",
+      "Одиниця виміру продукту": "page.getByText('Одиниця виміру продукту', { exact: true })",
+      "Кількість (план)": "page.getByText('Кількість (план)', { exact: true })",
+      "Кількість (факт)": "page.getByText('Кількість (факт)', { exact: true })",
+      "Собівартість (план)": "page.getByText('Собівартість (план)', { exact: true })",
+      "Собівартість (факт)": "page.getByText('Собівартість (факт)', { exact: true })",
+      "Частка (план, %)": "page.getByText('Частка (план, %)', { exact: true })"
+    }
+  },
+  "tab3SubordinateOrders": {
+    "headers": {
+      "Підпорядковані замовлення": "page.getByText('Підпорядковані замовлення', { exact: true })",
+      "Складові агрегуючого замовлення": "page.getByText('Складові агрегуючого замовлення', { exact: true })"
+    }
+  },
+  "tab4Waybills": {
+    "expenditureWaybills": {
+      "Видаткові накладні": "page.getByText('Видаткові накладні', { exact: true })",
+      "Склад-джерело": "page.getByText('Склад-джерело', { exact: true })",
+      "Дата накладної": "page.getByText('Дата накладної', { exact: true })",
+      "Контрагент": "page.getByText('Контрагент', { exact: true })",
+      "Статус": "page.getByText('Статус', { exact: true })"
+    },
+    "incomeWaybills": {
+      "Прибуткові накладні": "page.getByText('Прибуткові накладні', { exact: true })",
+      "Склад призначення": "page.getByText('Склад призначення', { exact: true })",
+      "Дата рахунку": "page.getByText('Дата рахунку', { exact: true })",
+      "Статус": "page.getByText('Статус', { exact: true })"
+    },
+    "transferWaybills": {
+      "Переміщення": "page.getByText('Переміщення', { exact: true })",
+      "Початковий склад": "page.getByText('Початковий склад', { exact: true })",
+      "Цільовий склад": "page.getByText('Цільовий склад', { exact: true })",
+      "Статус": "page.getByText('Статус', { exact: true })"
+    }
+  }
+}

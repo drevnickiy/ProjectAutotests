@@ -1,0 +1,64 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionRouting_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionRouting_FormPage/add",
+  "registryColumns": {
+    "Назва": "page.getByText('Назва', { exact: true })",
+    "Дата створення": "page.getByText('Дата створення', { exact: true })",
+    "Створив": "page.getByText('Створив', { exact: true })",
+    "Продукт": "page.getByText('Продукт', { exact: true })",
+    "Статус маршрутизації": "page.getByText('Статус маршрутизації', { exact: true })",
+    "Дата початку": "page.getByText('Дата початку', { exact: true })",
+    "Дата завершення": "page.getByText('Дата завершення', { exact: true })"
+  },
+  "leftPanelFormFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Код": "page.getByLabel('Код')",
+    "Версія": "page.getByLabel('Версія')",
+    "Статус маршрутизації": "page.getByLabel('Статус маршрутизації')",
+    "Продукт": "page.getByLabel('Продукт')",
+    "Дата початку": "page.getByLabel('Дата початку')",
+    "Дата завершення": "page.getByLabel('Дата завершення')"
+  },
+  "tabs": [
+    "Загальна інформація",
+    "Етапи та завдання"
+  ],
+  "tabGeneralInfo": {
+    "rawMaterials": {
+      "Сировина / матеріали продукту": "page.getByText('Сировина / матеріали продукту')",
+      "Створив": "page.getByText('Створив')",
+      "Матеріали / Сировина": "page.getByText('Матеріали / Сировина')",
+      "Норма витрат на одиницю": "page.getByText('Норма витрат на одиницю')",
+      "Одиниця продукту": "page.getByText('Одиниця продукту')",
+      "Не враховувати кількість на одиницю": "page.getByText('Не враховувати кількість на одиницю')",
+      "ПродуктМ": "page.getByText('ПродуктМ')",
+      "Продукт": "page.getByText('Продукт')"
+    },
+    "wasteProducts": {
+      "Відходи виробництва продукції": "page.getByText('Відходи виробництва продукції')",
+      "Маршрутна карта": "page.getByText('Маршрутна карта')",
+      "Відходи": "page.getByText('Відходи')",
+      "Відходи (переробка)": "page.getByText('Відходи')",
+      "Одиниця продукту": "page.getByText('Одиниця продукту')",
+      "Продукт": "page.getByText('Продукт')"
+    }
+  },
+  "tabStagesTasks": {
+    "typicalStage": {
+      "Типовий етап виробництва": "page.getByText('Типовий етап виробництва')",
+      "Назва": "page.getByText('Назва')",
+      "Тривалість (години)": "page.getByText('Тривалість (години)')",
+      "Тривалість (секунди)": "page.getByText('Тривалість (секунди)')",
+      "Тривалість (хвилини)": "page.getByText('Тривалість (хвилини)')"
+    },
+    "typicalTask": {
+      "Типове завдання етапу": "page.getByText('Типове завдання етапу')",
+      "Тип обладнання": "page.getByText('Тип обладнання')",
+      "Продукт": "page.getByText('Продукт')",
+      "Тех карта": "page.getByText('Тех карта')",
+      "Обладнання": "page.getByText('Обладнання')",
+      "Тривалість (хвилини)": "page.getByText('Тривалість (хвилини)')",
+      "Тривалість (години)": "page.getByText('Тривалість (години)')"
+    }
+  }
+}

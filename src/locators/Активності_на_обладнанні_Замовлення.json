@@ -1,0 +1,14 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionActivity_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionActivity_FormPage/add",
+  "productionOrderSubFormFields": {
+    "Виробниче замовлення": "page.getByLabel('Виробниче замовлення')",
+    "Етап": "page.getByLabel('Етап')",
+    "Відповідальний": "page.getByLabel('Відповідальний')",
+    "Дата початку": "page.getByLabel('Дата початку')",
+    "Час початку": "page.getByLabel('Час початку')",
+    "Тривалість (хв)": "page.getByLabel('Тривалість (хв)')",
+    "Кількість (план)": "page.getByLabel('Кількість (план)')",
+    "Назва": "page.getByLabel('Назва')"
+  }
+}

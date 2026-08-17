@@ -1,0 +1,76 @@
+{
+  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenProductionPlan_ListPage",
+  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenProductionPlan_FormPage/add",
+  "registryColumns": {
+    "Назва": "page.getByText('Назва', { exact: true })",
+    "Горизонт планування": "page.getByText('Горизонт планування', { exact: true })",
+    "Дата завершення (план)": "page.getByText('Дата завершення (план)', { exact: true })",
+    "Дата початку (план)": "page.getByText('Дата початку (план)', { exact: true })",
+    "Статус": "page.getByText('Статус', { exact: true })",
+    "Цільове завантаження (%)": "page.getByText('Цільове завантаження (%)', { exact: true })"
+  },
+  "formFields": {
+    "Назва": "page.getByLabel('Назва')",
+    "Статус": "page.getByLabel('Статус')",
+    "Дата початку (план)": "page.getByLabel('Дата початку (план)')",
+    "Дата завершення (план)": "page.getByLabel('Дата завершення (план)')",
+    "Розрахунок виробництва": "page.getByLabel('Розрахунок виробництва')",
+    "Тип обладнання": "page.getByLabel('Тип обладнання')"
+  },
+  "tab1ProductsPlan": {
+    "controls": {
+      "Вимиті залишки": "page.getByText('Вимиті залишки')",
+      "Запланувати виробництво": "page.getByText('Запланувати виробництво')"
+    },
+    "columns": {
+      "Категорія розподілу": "page.getByText('Категорія розподілу')",
+      "Кількість до виробництва": "page.getByText('Кількість до виробництва')",
+      "Контрактне замовлення": "page.getByText('Контрактне замовл')",
+      "Планування ГП": "page.getByText('Планування ГП')",
+      "Продукт": "page.getByText('Продукт')",
+      "Включити до плану": "page.getByText('Включити до пл')",
+      "Скоригована кількість до виробництва": "page.getByText('Скоригована кількість до виробництва')"
+    }
+  },
+  "tab2ProductionOrders": {
+    "actionButtons": {
+      "Роз'єднати": "page.getByText('Роз\\'єднати')",
+      "Об’єднати": "page.getByText('Об’єднати')",
+      "Очистити": "page.getByText('Очистити')",
+      "Підібрати обладнання": "page.getByText('Підібрати обладнання')"
+    },
+    "subSections": {
+      "Рекомендовані до роз'єднання": "page.getByText('Рекомендовані до роз\\'єднання')",
+      "Рекомендовані до об'єднання": "page.getByText('Рекомендовані до об’єднання')"
+    },
+    "columns": {
+      "Назва": "page.getByText('Назва')",
+      "Код / Назва": "page.getByText('Код / Назва')",
+      "Технологічна карта": "page.getByText('Технологічна карта')",
+      "Одиниця продукції": "page.getByText('Одиниця продукції')",
+      "Кількість (план)": "page.getByText('Кількість (план)')",
+      "До виробництва": "page.getByText('До виробництва')",
+      "Починаючи з": "page.getByText('Починаючи з')",
+      "Статус розділення/об’єднання": "page.getByText('Статус розділення/об’єднання')",
+      "Статус": "page.getByText('Статус')"
+    }
+  },
+  "tab3Sources": {
+    "planningFinishedProducts": {
+      "Планування готової продукції": "page.getByText('Планування готової продукції')",
+      "Дата створення": "page.getByText('Дата створення')",
+      "Назва": "page.getByText('Назва')",
+      "Місяць": "page.getByText('Місяць')",
+      "Рік": "page.getByText('Рік')",
+      "Бренд": "page.getByText('Бренд')"
+    },
+    "contractOrders": {
+      "Контрактні замовлення": "page.getByText('Контрактні замовлення')",
+      "Дата створення": "page.getByText('Дата створ')",
+      "Назва": "page.getByText('Назва')",
+      "Контрагент": "page.getByText('Контрагент')",
+      "Планова дата виконання": "page.getByText('Планова дата виконання')",
+      "Фактична дата виконання": "page.getByText('Фактична дата виконання')"
+    }
+  }
+}
