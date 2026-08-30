@@ -1,8 +1,7 @@
 import { Page, Locator, expect } from '@playwright/test';
+import { BasePage } from './BasePage';
 
-export class GenProductionCalculatPage {
-  readonly page: Page;
-
+export class GenProductionCalculatPage extends BasePage {
   // 🔹 Синяя кнопка "+ Додати" раздела
   readonly sectionAddButton: Locator;
 
@@ -32,7 +31,7 @@ export class GenProductionCalculatPage {
   readonly tab2ContractOrderColumn: Locator;
 
   constructor(page: Page) {
-    this.page = page;
+    super(page);
     this.sectionAddButton = page.locator('.crt-button--contained').filter({ hasText: 'Додати' }).last();
 
     // Вкладки карточки

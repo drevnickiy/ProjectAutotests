@@ -1,12 +1,14 @@
 import { Page } from '@playwright/test';
 import { BasePage } from './BasePage';
 
+import { getShellUrl } from '../config/environment';
+
 export class LoginPage extends BasePage {
   constructor(page: Page) {
     super(page);
   }
 
-  async open(targetUrl = 'https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenPlanFinishProduct_ListPage'): Promise<void> {
+  async open(targetUrl = getShellUrl()): Promise<void> {
     await super.open(targetUrl);
   }
 

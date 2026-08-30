@@ -1,5 +1,6 @@
 import { Page } from '@playwright/test';
 import { BasePage } from './BasePage';
+import { getShellUrl } from '../config/environment';
 
 export class WorkShiftPage extends BasePage {
   constructor(page: Page) {
@@ -8,17 +9,17 @@ export class WorkShiftPage extends BasePage {
 
   async navigate() {
     console.log('📌 Перехід у розділ "Зміни"...');
-    await this.open('https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenWorkShift_ListPage', 'Зміни');
-    await this.waitForPageLoaded();
+    await this.open(getShellUrl('#Section/GenWorkShift_ListPage'));
+    await this.waitForCreatioReady();
   }
 
   async clickAddWorkShift() {
     console.log('📌 Натискання кнопки додавання нової зміни...');
     const addBtn = this.page.getByRole('button', { name: 'Новий', exact: true })
-      .or(this.page.locator('#AddButton button, #AddButton, button[title*="Новий"]'))
+      .or(this.page.locator('#AddButton button, #AddButton, button[title*="Новий"], button:has-text("Додати")'))
       .first();
     await addBtn.waitFor({ state: 'visible', timeout: 15000 });
     await addBtn.click();
-    await this.waitForPageLoaded();
+    await this.waitForCreatioReady();
   }
 }

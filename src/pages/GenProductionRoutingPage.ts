@@ -12,6 +12,7 @@ export interface TaskData {
   stageNumber?: string;
   orderInStage: string;
   description: string;
+  productType?: string;
   taskType?: string;
   equipmentType?: string;
   hours?: string;
