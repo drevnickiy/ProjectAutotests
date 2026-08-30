@@ -54,7 +54,7 @@ export class GenProductionRoutingPage extends BasePage {
    */
   async addStage(data: StageData): Promise<void> {
     const stageBtn = this.page.locator('#FlexContainer_9ssw7lq').getByRole('button', { name: 'Новий' }).first();
-    await stageBtn.scrollIntoViewIfNeeded().catch(() => {});
+    await stageBtn.scrollIntoViewIfNeeded().catch(() => { });
     await stageBtn.click();
     await this.page.waitForTimeout(1000);
 
@@ -76,7 +76,7 @@ export class GenProductionRoutingPage extends BasePage {
    */
   async addTask(data: TaskData): Promise<void> {
     const taskBtn = this.page.locator('#FlexContainer_cphjuxl').getByRole('button', { name: 'Новий' }).first();
-    await taskBtn.scrollIntoViewIfNeeded().catch(() => {});
+    await taskBtn.scrollIntoViewIfNeeded().catch(() => { });
     await taskBtn.click();
     await this.page.waitForTimeout(1000);
 
@@ -184,7 +184,7 @@ export class GenProductionRoutingPage extends BasePage {
     // Если выбран 'ВКЯ' или видно поле 'Тип ВКЯ' — дожидаемся и выбираем случайный доступный вариант
     if (data.taskType === 'ВКЯ' || (await this.page.getByRole('combobox', { name: 'Тип ВКЯ' }).isVisible().catch(() => false))) {
       const vkyCombobox = this.page.getByRole('combobox', { name: 'Тип ВКЯ' });
-      await vkyCombobox.waitFor({ state: 'visible', timeout: 10000 }).catch(() => {});
+      await vkyCombobox.waitFor({ state: 'visible', timeout: 10000 }).catch(() => { });
       if (await vkyCombobox.isVisible().catch(() => false)) {
         await vkyCombobox.click();
         await this.page.waitForTimeout(500);
@@ -205,7 +205,7 @@ export class GenProductionRoutingPage extends BasePage {
     // Если выбран 'Сервісне завдання' или видно поле 'Тип сервісного завдання' — дожидаемся и выбираем случайный доступный вариант
     if (data.taskType === 'Сервісне завдання' || (await this.page.getByRole('combobox', { name: 'Тип сервісного завдання' }).isVisible().catch(() => false))) {
       const serviceTaskTypeCombobox = this.page.getByRole('combobox', { name: 'Тип сервісного завдання' });
-      await serviceTaskTypeCombobox.waitFor({ state: 'visible', timeout: 10000 }).catch(() => {});
+      await serviceTaskTypeCombobox.waitFor({ state: 'visible', timeout: 10000 }).catch(() => { });
       if (await serviceTaskTypeCombobox.isVisible().catch(() => false)) {
         await serviceTaskTypeCombobox.click();
         await this.page.waitForTimeout(500);

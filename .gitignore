@@ -1,8 +1,27 @@
-
-# Playwright
+# Dependencies
 node_modules/
+.venv/
+__pycache__/
+
+# Environment & Secrets
+.env
+storageState*.json
+
+# Playwright & Test Artifacts
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+screenshots/
+test_report/
+test-history.json
+test-results.json
+scan_comparison_report.json
+custom_report.html
+
+# IDE & OS
+.DS_Store
+.idea/
+*.iml
+.pytest_cache/

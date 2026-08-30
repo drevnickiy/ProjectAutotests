@@ -1,0 +1,20 @@
+[
+  {
+    "productName": "Шампунь для волосся \"Інтенсивний догляд\" Hydrasence 400 мл",
+    "productUrl": "/0/Shell/#Card/Products_FormPage/edit/ea62e8aa-296e-4ad9-9473-acf3415fd185",
+    "materials": [
+      {
+        "materialName": "Тара+НФ",
+        "unit": "штук",
+        "rate": "1.0000",
+        "comment": "Напівфабрикат"
+      },
+      {
+        "materialName": "Етикетка",
+        "unit": "штук",
+        "rate": "1.0129",
+        "comment": "Етикетка"
+      }
+    ]
+  }
+]

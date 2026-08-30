@@ -1,0 +1,35 @@
+[
+  {
+    "id": "TK-NF-901",
+    "name": "ТК-NF-901 Варка емульсійної основи лосьйону \"Silk & Glow\"",
+    "productName": "НФ-901 База лосьйону для тіла \"Silk & Glow\"",
+    "stages": [
+      { "number": "10", "name": "Підготовка та нагрів водної фази" },
+      { "number": "20", "name": "Емульгування та охолодження маси" }
+    ],
+    "tasks": [
+      {
+        "name": "Нагрів та змішування компонентів",
+        "stageName": "Підготовка та нагрів водної фази",
+        "stageNumber": "10",
+        "orderInStage": "1",
+        "description": "Нагрів водної фази в Реакторі 1",
+        "taskType": "Виробниче завдання",
+        "equipmentType": "Реактор 1",
+        "productType": "semi_finished",
+        "hours": "2"
+      },
+      {
+        "name": "Гомогенізація та охолодження лосьйону",
+        "stageName": "Емульгування та охолодження маси",
+        "stageNumber": "20",
+        "orderInStage": "1",
+        "description": "Емульгування та охолодження в Реакторі 1",
+        "taskType": "Виробниче завдання",
+        "equipmentType": "Реактор 1",
+        "productType": "semi_finished",
+        "hours": "1.5"
+      }
+    ]
+  }
+]

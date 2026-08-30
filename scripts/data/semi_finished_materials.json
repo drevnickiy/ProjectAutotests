@@ -1,0 +1,38 @@
+[
+  {
+    "productName": "НФ-901 База лосьйону для тіла \"Silk & Glow\"",
+    "routingName": "ТК-NF-901 Варка емульсійної основи лосьйону \"Silk & Glow\"",
+    "materials": [
+      {
+        "materialName": "Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.75"
+      },
+      {
+        "materialName": "Гліцерин косметичний",
+        "unit": "кілограм",
+        "rate": "0.05"
+      },
+      {
+        "materialName": "Масло Ши",
+        "unit": "кілограм",
+        "rate": "0.10"
+      },
+      {
+        "materialName": "Емульгатор (Cetearyl Alcohol)",
+        "unit": "кілограм",
+        "rate": "0.05"
+      },
+      {
+        "materialName": "Гіалуронова кислота",
+        "unit": "кілограм",
+        "rate": "0.03"
+      },
+      {
+        "materialName": "Консервант (Phenoxyethanol)",
+        "unit": "кілограм",
+        "rate": "0.02"
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "TK-GP-HSHL0025",
+    "name": "ТК-GP-HSHL0025 Фасування та пакування шампуню для волосся \"Інтенсивний догляд\" Hydrasence 400 мл",
+    "productName": "Шампунь для волосся \"Інтенсивний догляд\" Hydrasence 400 мл",
+    "productUrl": "/0/Shell/#Card/Products_FormPage/edit/ea62e8aa-296e-4ad9-9473-acf3415fd185",
+    "stages": [
+      {
+        "number": "10",
+        "name": "Санітарна обробка та дезінфекція"
+      },
+      {
+        "number": "20",
+        "name": "Фасування у флакони 400 мл"
+      },
+      {
+        "number": "30",
+        "name": "Етикетування з датером та пакування"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "Миття, дезінфекція обладнання, тари та інвентарю",
+        "stageName": "Санітарна обробка та дезінфекція",
+        "stageNumber": "10",
+        "orderInStage": "1",
+        "description": "Санітарна підготовка лінії",
+        "taskType": "Сервісне завдання",
+        "equipmentType": "Фасування",
+        "productType": "finished",
+        "hours": "1"
+      },
+      {
+        "name": "Розлив у флакони 400 мл",
+        "stageName": "Фасування у флакони 400 мл",
+        "stageNumber": "20",
+        "orderInStage": "1",
+        "description": "Фасування на дозаторі G1WY-50-500",
+        "taskType": "Виробниче завдання",
+        "equipmentType": "Фасування",
+        "productType": "finished",
+        "hours": "0.00178"
+      },
+      {
+        "name": "Етикетування та маркування датером",
+        "stageName": "Етикетування з датером та пакування",
+        "stageNumber": "30",
+        "orderInStage": "1",
+        "description": "Етикетування на машині ВКП-2",
+        "taskType": "Виробниче завдання",
+        "equipmentType": "Маркування та пакування",
+        "productType": "finished",
+        "hours": "0.00178"
+      }
+    ]
+  }
+]

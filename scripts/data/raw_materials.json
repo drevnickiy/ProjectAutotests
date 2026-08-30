@@ -1,0 +1,65 @@
+[
+  {
+    "code": "RM-048",
+    "name": "Polyquaternium 44 (Luviquat UltraCare AT 1 BASF)",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "RM-049",
+    "name": "RESPLANTA MACADAMIA MB",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "RM-050",
+    "name": "Водно-гліцериновий гідролізат протеїнів кератину",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "RM-051",
+    "name": "Гидролізат \"Протеїнів шовку\"",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "RM-052",
+    "name": "\"Pentylene Glycol\"",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "RM-053",
+    "name": "Hydrovance",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "RM-054",
+    "name": "\"ПЕГ- 40\" 98%",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "RM-055",
+    "name": "Nipaguard PE 9010",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "RM-056",
+    "name": "Віддушка Mango&Camellia 7446",
+    "category": "",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Liquid washing homogenizing mixing pot YEX-1000L",
+    "type": "Реактор",
+    "status": "В роботі",
+    "capacity": "1000",
+    "calibration50": "2.00",
+    "calibration75": "3.00",
+    "calibration95": "4.00"
+  },
+  {
+    "name": "Washing liquid homogenizing mixer YEX-1000L",
+    "type": "Реактор",
+    "status": "В роботі",
+    "capacity": "1000",
+    "calibration50": "2.00",
+    "calibration75": "3.00",
+    "calibration95": "4.00"
+  },
+  {
+    "name": "Поршневий дозатор для рідких і пастоподібних продуктів G1WY-50-500",
+    "type": "Фасування",
+    "status": "В роботі",
+    "productivity": "562.5",
+    "productivityUnit": "штук"
+  },
+  {
+    "name": "Machine type ВКП-2 (лінія етикування з датером)",
+    "type": "Маркування та пакування",
+    "status": "В роботі",
+    "productivity": "562.5",
+    "productivityUnit": "штук"
+  }
+]
