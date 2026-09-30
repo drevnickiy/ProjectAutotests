@@ -1,11 +1,110 @@
 [
   {
-    "code": "HSHL0025",
-    "name": "Шампунь для волосся \"Інтенсивний догляд\" Hydrasence 400 мл",
+    "code": "XT-GP-001",
+    "name": "[XTEST] ГП Міцелярна вода Pure Clean 150мл | XT-GP-001",
     "category": "Готовий продукт",
-    "unit": "штук",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730",
-    "description": "Шампунь для волосся Інтенсивний догляд Hydrasence 400 мл"
+    "description": "Міцелярна вода 150мл (0 НФ)"
+  },
+  {
+    "code": "XT-GP-002",
+    "name": "[XTEST] ГП Тонік для обличчя Herbal 150мл | XT-GP-002",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Тонік для обличчя 150мл (1 НФ гнучкий)"
+  },
+  {
+    "code": "XT-GP-003",
+    "name": "[XTEST] ГП Шампунь базовий Daily 250мл | XT-GP-003",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Шампунь щоденний 250мл (1 НФ жорсткий)"
+  },
+  {
+    "code": "XT-GP-004",
+    "name": "[XTEST] ГП Бальзам для волосся Silk 250мл | XT-GP-004",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Бальзам для волосся 250мл (1 НФ жорсткий)"
+  },
+  {
+    "code": "XT-GP-005",
+    "name": "[XTEST] ГП Шампунь 250мл два НФ DuoActive | XT-GP-005",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Шампунь два НФ 250мл (2 гілки: 1 жорсткий + 1 гнучкий)"
+  },
+  {
+    "code": "XT-GP-006",
+    "name": "[XTEST] ГП Гель 400мл два НФ AquaFresh | XT-GP-006",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Гель для душу два НФ 400мл (2 гілки: обидві гнучкі)"
+  },
+  {
+    "code": "XT-GP-007",
+    "name": "[XTEST] ГП Кондиціонер TrioPower 250мл | XT-GP-007",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Кондиціонер тріо 250мл (3 гілки: 2 жорсткі + 1 гнучкий)"
+  },
+  {
+    "code": "XT-GP-008",
+    "name": "[XTEST] ГП Крем-мило TripleCare 400мл | XT-GP-008",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Крем-мило 400мл (3 гілки: всі 3 жорсткі)"
+  },
+  {
+    "code": "XT-GP-009",
+    "name": "[XTEST] ГП Шампунь 3-рівні вкладеності 250мл | XT-GP-009",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Шампунь 3-рівні (ГП -> НФ10 -> НФ06)"
+  },
+  {
+    "code": "XT-GP-010",
+    "name": "[XTEST] ГП Еліксир 4-рівні вкладеності 150мл | XT-GP-010",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Еліксир 4-рівні (ГП -> НФ15 -> НФ18 -> НФ05)"
+  },
+  {
+    "code": "XT-GP-011",
+    "name": "[XTEST] ГП Шампунь Агрегат-А 250мл | XT-GP-011",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Шампунь Агрегат-А (НФ17, жорсткий зв'язок = TRUE)"
+  },
+  {
+    "code": "XT-GP-012",
+    "name": "[XTEST] ГП Гель Агрегат-Б 400мл | XT-GP-012",
+    "category": "Готовий продукт",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "Гель Агрегат-Б (НФ17, гнучкий зв'язок = FALSE)"
   }
 ]

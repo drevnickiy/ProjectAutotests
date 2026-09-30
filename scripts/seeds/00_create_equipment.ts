@@ -39,7 +39,7 @@ test.describe('00. Створення та калібрування обладн
       await equipmentPage.createEquipment(item);
 
       // Скріншот створеного обладнання
-      const artifactDir = '/Users/bogdansunday/.gemini/antigravity-ide/brain/275d5a89-b865-4c99-a2bc-897cc221b635';
+      const artifactDir = '/Users/bogdansunday/.gemini/antigravity-ide/brain/2e2d16a7-14a3-4d3c-817a-a9e8af64be23';
       const cleanName = item.name.replace(/[^a-zA-Z0-9А-Яа-яіІїЇєЄ_-]/g, '_').slice(0, 40);
       const screenshotPath = path.join(artifactDir, `created_equipment_${cleanName}.png`);
       await page.waitForTimeout(1000);

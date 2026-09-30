@@ -1,37 +1,427 @@
 [
   {
-    "productName": "НФ-901 База лосьйону для тіла \"Silk & Glow\"",
-    "routingName": "ТК-NF-901 Варка емульсійної основи лосьйону \"Silk & Glow\"",
+    "productName": "[XTEST] НФ Водна фаза підготовлена | XT-NF-001",
+    "routingName": "ТК-НФ | Водна фаза підготовлена",
     "materials": [
       {
-        "materialName": "Вода деіонізована",
+        "materialName": "[XTEST] Вода деіонізована",
         "unit": "кілограм",
-        "rate": "0.75"
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
       },
       {
-        "materialName": "Гліцерин косметичний",
+        "materialName": "[XTEST] Spolapon AES 242/70",
         "unit": "кілограм",
-        "rate": "0.05"
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
       },
       {
-        "materialName": "Масло Ши",
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
         "unit": "кілограм",
-        "rate": "0.10"
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ ПАВ-основа шампуню | XT-NF-002",
+    "routingName": "ТК-НФ | ПАВ-основа шампуню",
+    "materials": [
+      {
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
       },
       {
-        "materialName": "Емульгатор (Cetearyl Alcohol)",
+        "materialName": "[XTEST] Spolapon AES 242/70",
         "unit": "кілограм",
-        "rate": "0.05"
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
       },
       {
-        "materialName": "Гіалуронова кислота",
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
         "unit": "кілограм",
-        "rate": "0.03"
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Емульсійна база кондиціонера | XT-NF-003",
+    "routingName": "ТК-НФ | Емульсійна база кондиціонера",
+    "materials": [
+      {
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
       },
       {
-        "materialName": "Консервант (Phenoxyethanol)",
+        "materialName": "[XTEST] Spolapon AES 242/70",
         "unit": "кілограм",
-        "rate": "0.02"
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Масляна фаза емульгуюча | XT-NF-004",
+    "routingName": "ТК-НФ | Масляна фаза емульгуюча",
+    "materials": [
+      {
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] Spolapon AES 242/70",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Вітамінно-активний премікс | XT-NF-005",
+    "routingName": "ТК-НФ | Вітамінно-активний премікс",
+    "materials": [
+      {
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] Spolapon AES 242/70",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Відновлюючий комплекс протеїнів | XT-NF-006",
+    "routingName": "ТК-НФ | Відновлюючий комплекс протеїнів",
+    "materials": [
+      {
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] Spolapon AES 242/70",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Рослинний екстракт концентрат | XT-NF-007",
+    "routingName": "ТК-НФ | Рослинний екстракт концентрат",
+    "materials": [
+      {
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] Spolapon AES 242/70",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Базовий міцелярний розчин | XT-NF-008",
+    "routingName": "ТК-НФ | Базовий міцелярний розчин",
+    "materials": [
+      {
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] Spolapon AES 242/70",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Маса шампуню зволожуючого | XT-NF-009",
+    "routingName": "ТК-НФ | Маса шампуню зволожуючого",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Водна фаза підготовлена | XT-NF-001",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] НФ ПАВ-основа шампуню | XT-NF-002",
+        "unit": "кілограм",
+        "rate": "0.3000",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Маса шампуню відновлюючого | XT-NF-010",
+    "routingName": "ТК-НФ | Маса шампуню відновлюючого",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ ПАВ-основа шампуню | XT-NF-002",
+        "unit": "кілограм",
+        "rate": "0.6000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] НФ Відновлюючий комплекс протеїнів | XT-NF-006",
+        "unit": "кілограм",
+        "rate": "0.4000",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Маса бальзаму живильного | XT-NF-011",
+    "routingName": "ТК-НФ | Маса бальзаму живильного",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Емульсійна база кондиціонера | XT-NF-003",
+        "unit": "кілограм",
+        "rate": "0.7500",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] НФ Масляна фаза емульгуюча | XT-NF-004",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Маса кондиціонера протеїнова | XT-NF-012",
+    "routingName": "ТК-НФ | Маса кондиціонера протеїнова",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Емульсійна база кондиціонера | XT-NF-003",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] НФ Відновлюючий комплекс протеїнів | XT-NF-006",
+        "unit": "кілограм",
+        "rate": "0.3000",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Маса гелю для душу AquaFresh | XT-NF-013",
+    "routingName": "ТК-НФ | Маса гелю для душу AquaFresh",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ ПАВ-основа шампуню | XT-NF-002",
+        "unit": "кілограм",
+        "rate": "0.8000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] НФ Вітамінно-активний премікс | XT-NF-005",
+        "unit": "кілограм",
+        "rate": "0.2000",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Маса тоніка заспокійливого | XT-NF-014",
+    "routingName": "ТК-НФ | Маса тоніка заспокійливого",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Базовий міцелярний розчин | XT-NF-008",
+        "unit": "кілограм",
+        "rate": "0.8500",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] НФ Рослинний екстракт концентрат | XT-NF-007",
+        "unit": "кілограм",
+        "rate": "0.1500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Комплексна маса преміум | XT-NF-015",
+    "routingName": "ТК-НФ | Комплексна маса преміум",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Маса шампуню відновлюючого | XT-NF-010",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] НФ Премікс нано-вітамінів | XT-NF-018",
+        "unit": "кілограм",
+        "rate": "0.3000",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Маса маски глибокого відновл. | XT-NF-016",
+    "routingName": "ТК-НФ | Маса маски глибокого відновл.",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Маса кондиціонера протеїнова | XT-NF-012",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] НФ Масляна фаза емульгуюча | XT-NF-004",
+        "unit": "кілограм",
+        "rate": "0.3000",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Універсальна основа Агрегат | XT-NF-017",
+    "routingName": "ТК-НФ | Універсальна основа Агрегат",
+    "materials": [
+      {
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.7000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] Spolapon AES 242/70",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Синтез та введення активів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0500",
+        "stageName": "Етап 3: Охолодження та фіналізація"
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] НФ Премікс нано-вітамінів | XT-NF-018",
+    "routingName": "ТК-НФ | Премікс нано-вітамінів",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Вітамінно-активний премікс | XT-NF-005",
+        "unit": "кілограм",
+        "rate": "0.9000",
+        "stageName": "Етап 1: Підготовка та нагрів"
+      },
+      {
+        "materialName": "[XTEST] Консервант Nipaguard PE 9010",
+        "unit": "кілограм",
+        "rate": "0.0100",
+        "stageName": "Етап 3: Охолодження та фіналізація"
       }
     ]
   }

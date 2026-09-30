@@ -1,13 +1,15 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { LoginPage } from '../../src/pages/LoginPage';
 import { GenProductionRoutingPage } from '../../src/pages/GenProductionRoutingPage';
+import { ProductMaterialsPage } from '../../src/pages/ProductMaterialsPage';
 import fs from 'fs';
 import path from 'path';
 
 interface MaterialItem {
   materialName: string;
-  unit: string;
+  unit?: string;
   rate: string;
+  stageName?: string;
   comment?: string;
 }
 
@@ -21,12 +23,14 @@ interface FinishedMaterialConfig {
 test.describe('06. Додавання сировини та напівфабрикатів для готової продукції', () => {
   let loginPage: LoginPage;
   let routingPage: GenProductionRoutingPage;
+  let productMaterialsPage: ProductMaterialsPage;
   const dataPath = path.resolve(__dirname, '../data/finished_materials.json');
   const items: FinishedMaterialConfig[] = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
 
   test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page);
     routingPage = new GenProductionRoutingPage(page);
+    productMaterialsPage = new ProductMaterialsPage(page);
   });
 
   for (const config of items) {
@@ -42,58 +46,57 @@ test.describe('06. Додавання сировини та напівфабри
         await page.waitForLoadState('domcontentloaded');
         await page.waitForTimeout(3000);
       } else {
-        if (config.productUrl) {
-          await loginPage.open(config.productUrl);
-        } else {
-          await loginPage.open('https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/Products_ListPage');
-          await loginPage.login();
-          await page.waitForLoadState('domcontentloaded');
-          await page.waitForTimeout(3000);
-
-          const prefix = config.productName.split(' ')[0] || config.productName;
-          console.log(`🔍 Пошук продукту за префіксом "${prefix}"...`);
-
-          const prodRow = page.locator('[role="gridcell"] a, .crt-link, [role="row"] a')
-            .filter({ hasText: prefix })
-            .first();
-          await prodRow.waitFor({ state: 'visible', timeout: 15000 });
-          await prodRow.click();
-        }
-
+        await loginPage.open('/0/Shell/#Section/GenProductionRouting_ListPage');
         await loginPage.login();
         await page.waitForLoadState('domcontentloaded');
         await page.waitForTimeout(3000);
 
-        // Перехід на вкладку "ТЕХНОЛОГІЧНА КАРТА"
-        const routingTab = page.locator('[role="tab"], .mat-tab-label, .mat-mdc-tab')
-          .filter({ hasText: /^ТЕХНОЛОГІЧНА КАРТА$/i })
-          .first();
-        await routingTab.waitFor({ state: 'visible', timeout: 15000 });
-        await routingTab.click();
-        await page.waitForTimeout(2000);
+        const discardBtn = page.locator('button').filter({ hasText: /Не зберігати|Discard/i }).first();
+        if (await discardBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+          await discardBtn.click({ force: true }).catch(() => {});
+          await page.waitForTimeout(1000);
+        }
 
-        const existingRouting = page.locator('crt-expansion-panel').filter({ hasText: /Технологічна карта/i })
-          .locator('a, [role="gridcell"] a, .crt-link')
+        const targetSearch = (config as any).routingName || config.productName;
+        const searchInput = page.locator('crt-search-input input, input[placeholder*="Пошук"], input[aria-label*="Пошук"]').first();
+        if (await searchInput.isVisible({ timeout: 4000 }).catch(() => false)) {
+          await searchInput.fill(targetSearch);
+          await page.keyboard.press('Enter');
+          await page.waitForTimeout(2500);
+        }
+
+        const row = page.locator('[role="gridcell"] a, .crt-link, [role="row"] a')
+          .filter({ hasText: targetSearch.slice(0, 30) })
           .first();
-        await existingRouting.waitFor({ state: 'visible', timeout: 10000 });
-        await existingRouting.click();
+        await row.waitFor({ state: 'visible', timeout: 20000 });
+        await row.click();
         await page.waitForLoadState('domcontentloaded');
         await page.waitForTimeout(3000);
       }
 
       // Перехід на вкладку "ЗАГАЛЬНА ІНФОРМАЦІЯ"
       console.log(`[Test] Перехід на вкладку "ЗАГАЛЬНА ІНФОРМАЦІЯ"...`);
-      await routingPage.switchToTab('ЗАГАЛЬНА ІНФОРМАЦІЯ');
-      await page.waitForTimeout(2000);
+      const generalTab = page.locator('[role="tab"], .mat-tab-label, .mat-mdc-tab, .mat-mdc-tab-header .mdc-tab, div')
+        .filter({ hasText: /^ЗАГАЛЬНА ІНФОРМАЦІЯ$/i })
+        .first();
+      if (await generalTab.isVisible({ timeout: 5000 }).catch(() => false)) {
+        await generalTab.click();
+        await page.waitForTimeout(2000);
+      }
 
       // Додавання кожної позиції сировини / НФ
       for (const mat of config.materials) {
-        console.log(`[Test] Додавання сировини "${mat.materialName}" (${mat.rate} ${mat.unit})${mat.comment ? ` [${mat.comment}]` : ''}...`);
-        await routingPage.addRawMaterial(mat.materialName, mat.unit, mat.rate);
+        console.log(`[Test] Додавання матеріалу/НФ "${mat.materialName}" (${mat.rate} ${mat.unit || 'штук'})...`);
+        await productMaterialsPage.addMaterial({
+          materialName: mat.materialName,
+          unit: mat.unit || 'штук',
+          rate: mat.rate,
+          stageName: mat.stageName || 'Фасування'
+        });
       }
 
       // Скріншот таблиці сировини
-      const artifactDir = '/Users/bogdansunday/.gemini/antigravity-ide/brain/275d5a89-b865-4c99-a2bc-897cc221b635';
+      const artifactDir = '/Users/bogdansunday/.gemini/antigravity-ide/brain/2e2d16a7-14a3-4d3c-817a-a9e8af64be23';
       const cleanName = config.productName.replace(/[^a-zA-Z0-9А-Яа-яіІїЇєЄ_-]/g, '_');
       const screenshotPath = path.join(artifactDir, `materials_finished_${cleanName}.png`);
       await page.waitForTimeout(1000);

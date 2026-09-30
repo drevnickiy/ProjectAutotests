@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+
+# Playwright Reports & Artifacts
+test-results/
+playwright-report/
+blob-report/
+screenshots/
+test_report/
+custom_report.html
+test-results.json
+test-history.json
+scan_comparison_report.json
+
+# Auth & Secrets
+storageState*.json
+.env
+
+# IDE & OS
+.DS_Store
+.idea/
+*.iml

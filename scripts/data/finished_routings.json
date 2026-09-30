@@ -1,56 +1,589 @@
 [
   {
-    "id": "TK-GP-HSHL0025",
-    "name": "ТК-GP-HSHL0025 Фасування та пакування шампуню для волосся \"Інтенсивний догляд\" Hydrasence 400 мл",
-    "productName": "Шампунь для волосся \"Інтенсивний догляд\" Hydrasence 400 мл",
-    "productUrl": "/0/Shell/#Card/Products_FormPage/edit/ea62e8aa-296e-4ad9-9473-acf3415fd185",
+    "id": "XT-GP-001",
+    "name": "ТК-ГП | Міцелярна вода Pure Clean 150мл",
+    "productName": "[XTEST] ГП Міцелярна вода Pure Clean 150мл | XT-GP-001",
     "stages": [
       {
-        "number": "10",
-        "name": "Санітарна обробка та дезінфекція"
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
       },
       {
-        "number": "20",
-        "name": "Фасування у флакони 400 мл"
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
       },
       {
-        "number": "30",
-        "name": "Етикетування з датером та пакування"
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
       }
     ],
     "tasks": [
       {
-        "name": "Миття, дезінфекція обладнання, тари та інвентарю",
-        "stageName": "Санітарна обробка та дезінфекція",
-        "stageNumber": "10",
-        "orderInStage": "1",
-        "description": "Санітарна підготовка лінії",
-        "taskType": "Сервісне завдання",
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
         "equipmentType": "Фасування",
-        "productType": "finished",
-        "hours": "1"
+        "duration": "60.00",
+        "ignoreQuantity": true
       },
       {
-        "name": "Розлив у флакони 400 мл",
-        "stageName": "Фасування у флакони 400 мл",
-        "stageNumber": "20",
-        "orderInStage": "1",
-        "description": "Фасування на дозаторі G1WY-50-500",
-        "taskType": "Виробниче завдання",
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
         "equipmentType": "Фасування",
-        "productType": "finished",
-        "hours": "0.00178"
+        "duration": "0.05",
+        "ignoreQuantity": false
       },
       {
-        "name": "Етикетування та маркування датером",
-        "stageName": "Етикетування з датером та пакування",
-        "stageNumber": "30",
-        "orderInStage": "1",
-        "description": "Етикетування на машині ВКП-2",
-        "taskType": "Виробниче завдання",
-        "equipmentType": "Маркування та пакування",
-        "productType": "finished",
-        "hours": "0.00178"
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-002",
+    "name": "ТК-ГП | Тонік для обличчя Herbal 150мл",
+    "productName": "[XTEST] ГП Тонік для обличчя Herbal 150мл | XT-GP-002",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-003",
+    "name": "ТК-ГП | Шампунь базовий Daily 250мл",
+    "productName": "[XTEST] ГП Шампунь базовий Daily 250мл | XT-GP-003",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-004",
+    "name": "ТК-ГП | Бальзам для волосся Silk 250мл",
+    "productName": "[XTEST] ГП Бальзам для волосся Silk 250мл | XT-GP-004",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-005",
+    "name": "ТК-ГП | Шампунь 250мл два НФ DuoActive",
+    "productName": "[XTEST] ГП Шампунь 250мл два НФ DuoActive | XT-GP-005",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-006",
+    "name": "ТК-ГП | Гель 400мл два НФ AquaFresh",
+    "productName": "[XTEST] ГП Гель 400мл два НФ AquaFresh | XT-GP-006",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-007",
+    "name": "ТК-ГП | Кондиціонер TrioPower 250мл",
+    "productName": "[XTEST] ГП Кондиціонер TrioPower 250мл | XT-GP-007",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-008",
+    "name": "ТК-ГП | Крем-мило TripleCare 400мл",
+    "productName": "[XTEST] ГП Крем-мило TripleCare 400мл | XT-GP-008",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-009",
+    "name": "ТК-ГП | Шампунь 3-рівні вкладеності 250мл",
+    "productName": "[XTEST] ГП Шампунь 3-рівні вкладеності 250мл | XT-GP-009",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-010",
+    "name": "ТК-ГП | Еліксир 4-рівні вкладеності 150мл",
+    "productName": "[XTEST] ГП Еліксир 4-рівні вкладеності 150мл | XT-GP-010",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-011",
+    "name": "ТК-ГП | Шампунь Агрегат-А 250мл",
+    "productName": "[XTEST] ГП Шампунь Агрегат-А 250мл | XT-GP-011",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      }
+    ]
+  },
+  {
+    "id": "XT-GP-012",
+    "name": "ТК-ГП | Гель Агрегат-Б 400мл",
+    "productName": "[XTEST] ГП Гель Агрегат-Б 400мл | XT-GP-012",
+    "stages": [
+      {
+        "name": "Етап 1: Санітарна обробка",
+        "duration": "1.0"
+      },
+      {
+        "name": "Етап 2: Фасування та укупорка",
+        "duration": "2.0"
+      },
+      {
+        "name": "Етап 3: Етикетування та пакування",
+        "duration": "1.0"
+      }
+    ],
+    "tasks": [
+      {
+        "name": "1. Миття та дезінфекція обладнання",
+        "stageName": "Етап 1: Санітарна обробка",
+        "equipmentType": "Фасування",
+        "duration": "60.00",
+        "ignoreQuantity": true
+      },
+      {
+        "name": "2. Розлив та укупорка у флакони",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "equipmentType": "Фасування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "3. Етикетування та датування",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
+      },
+      {
+        "name": "4. Групове пакування у гофрокороби",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "equipmentType": "Етикетування",
+        "duration": "0.05",
+        "ignoreQuantity": false
       }
     ]
   }

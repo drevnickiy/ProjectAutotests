@@ -36,6 +36,7 @@ setup(`1. Перевірка та збереження токенів сесії
   await page.goto(targetUrl);
   await page.waitForTimeout(2000);
   await loginPage.login();
+  await page.waitForTimeout(5000);
 
   // 3. Зберігаємо оновлену сесію (cookies, localStorage, CSRF токени)
   await page.context().storageState({ path: authFile });

@@ -101,4 +101,4 @@ import { getShellUrl } from '../../src/config/environment';
 
 await page.goto(getShellUrl('#Section/GenEquipment_ListPage'));
 ```
-Это обеспечивает мгновенную и бесшовную работу на обоих серверах (`main` и `main2`).
+Это обеспечивает мгновенную и бесшовную работу на всех серверах (`main`, `main2` и `preprod`).

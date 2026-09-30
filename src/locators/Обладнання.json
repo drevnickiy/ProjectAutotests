@@ -1,78 +1,36 @@
 {
-  "listPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Section/GenEquipment_ListPage",
-  "formPageUrl": "https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/GenEquipment_FormPage/add",
-  "registryColumns": {
-    "Назва": "page.getByRole('button', { name: 'Сортувати Назва' })",
-    "Статус": "page.getByRole('button', { name: 'Сортувати Статус' })",
-    "Виробнича лінія": "page.getByRole('button', { name: 'Сортувати Виробнича лінія' })",
-    "Тип обладнання": "page.getByRole('button', { name: 'Сортувати Тип обладнання' })"
-  },
-  "leftPanelFormFields": {
-    "Назва": "page.getByLabel('Назва')",
-    "Статус": "page.getByLabel('Статус')",
-    "Тип обладнання": "page.getByLabel('Тип обладнання')",
-    "Дата введення в експлуатацію": "page.getByLabel('Дата введення в експлуатацію')",
-    "Виробнича лінія": "page.getByLabel('Виробнича лінія')",
-    "Цех": "page.getByLabel('Цех')",
-    "Автоматизація": "page.getByLabel('Автоматизація')",
-    "Сервіс": "page.getByLabel('Сервіс')"
+  "listPageUrl": "/0/Shell/#Section/GenEquipment_ListPage",
+  "formPageUrl": "/0/Shell/#Card/GenEquipment_FormPage/add",
+  "leftPanel": {
+    "nameInput": "page.getByRole('textbox', { name: 'Назва' })",
+    "typeCombobox": "page.getByRole('combobox', { name: 'Тип обладнання' })",
+    "statusCombobox": "page.getByRole('combobox', { name: 'Статус' })",
+    "commissioningDateInput": "page.getByRole('textbox', { name: 'Дата введення в експлуатацію' })",
+    "productionLineCombobox": "page.getByRole('combobox', { name: 'Виробнича лінія' })",
+    "capacityInput": "page.getByRole('textbox', { name: 'Виробнича потужність' }).or(page.locator('input[aria-label*=\"Виробнича потужність\"]'))"
   },
   "tabProperties": {
-    "Джерело енергії": "page.getByLabel('Джерело енергії')",
-    "Споживання електроенергії (кВт/год)": "page.getByLabel('Споживання електроенергії (кВт/год)')",
-    "Продуктивність": "page.getByLabel('Продуктивність')",
-    "Амортизація (USD/год)": "page.getByLabel('Амортизація (USD/год)')",
-    "Цикл роботи": "page.getByLabel('Цикл роботи')",
-    "Одиниця продуктивності": "page.getByLabel('Одиниця продуктивності')",
-    "Кількість разів": "page.getByLabel('Кількість разів')",
-    "Середній час переналаштування": "page.getByLabel('Середній час переналаштування')",
-    "Техобслуговування": "page.getByLabel('Техобслуговування')",
-    "Кількість місяців": "page.getByLabel('Кількість місяців')",
-    "Призначення": "page.getByLabel('Призначення')",
-    "Історія обслуговування": "page.getByLabel('Історія обслуговування')"
-  },
-  "tabInput": {
-    "Показувати тільки вхідні": "page.getByLabel('Показувати тільки вхідні')",
-    "Споживання (од./год)": "page.getByLabel('Споживання (од./год)')",
-    "Сировина": "page.getByLabel('Сировина')",
-    "Одиниця виміру продукту": "page.getByLabel('Одиниця виміру продукту')",
-    "Тип": "page.getByLabel('Тип')"
+    "tab": "page.getByTitle('Властивості', { exact: true }).or(page.locator('[role=\"tab\"]').filter({ hasText: /^Властивості$/i }))",
+    "productivityInput": "page.getByRole('textbox', { name: 'Продуктивність', exact: true })",
+    "productivityUnitCombobox": "page.getByRole('combobox', { name: 'Одиниця продуктивності' })",
+    "load50Input": "page.locator('input[aria-label*=\"50%\"]').first()",
+    "load75Input": "page.locator('input[aria-label*=\"75%\"]').first()",
+    "load95Input": "page.locator('input[aria-label*=\"95%\"]').first()"
   },
   "tabOutput": {
-    "Вихід": "page.getByText('Вихід', { exact: true })",
-    "Напівфабрикати": "page.getByText('Напівфабрикати')",
-    "Категорія": "page.getByText('Категорія')",
-    "Тип": "page.getByText('Тип')",
-    "Продуктивність (од./год)": "page.getByText('Продуктивність (од./год)')",
-    "Одиниця виміру": "page.getByText('Одиниця виміру')",
-    "Обладнання": "page.getByText('Обладнання')",
-    "Продукти": "page.getByText('Продукти')"
+    "tab": "page.getByTitle('Вихід', { exact: true })",
+    "createSemiFinishedBtn": "page.locator('#FlexContainer_u697e4l').getByRole('button', { name: 'Створити' }).or(page.locator('crt-expansion-panel').filter({ hasText: /Напівфабрикати/i }).getByRole('button', { name: 'Створити' }))",
+    "createProductBtn": "page.locator('#FlexContainer_ns6ddds').getByRole('button', { name: 'Створити' }).or(page.locator('crt-expansion-panel').filter({ hasText: /Продукти/i }).getByRole('button', { name: 'Створити' }))",
+    "modalSemiFinishedCombobox": "page.getByRole('combobox', { name: 'Напівфабрикат' })",
+    "modalProductCombobox": "page.getByRole('combobox', { name: 'Продукт', exact: true })",
+    "modalRateInput": "page.getByRole('textbox', { name: 'Продуктивність (од/год)' })",
+    "modalUnitCombobox": "page.getByRole('combobox', { name: 'Одиниця виміру продукту' })",
+    "modalSaveBtn": "page.getByRole('button', { name: 'Зберегти' })",
+    "modalCancelBtn": "page.getByRole('button', { name: 'Скасувати' })"
   },
-  "tabWaste": {
-    "Відходи": "page.getByText('Відходи', { exact: true })",
-    "Обладнання": "page.getByText('Обладнання')",
-    "Тип": "page.getByText('Тип')",
-    "Одиниця виміру": "page.getByText('Одиниця виміру')",
-    "Категорія": "page.getByText('Категорія')",
-    "Відходи, що підлягають переробці": "page.getByText('Відходи, що підлягають переробці')",
-    "Відходи, що не підлягають переробці": "page.getByText('Відходи, що не підлягають переробці')"
-  },
-  "tabMaintenance": {
-    "Робочий час (місяць)": "page.getByText('Робочий час (місяць)')",
-    "Загальний робочий час": "page.getByText('Загальний робочий час')",
-    "Годин до наступного технічного обслуговування": "page.getByText('Годин до наступного технічного обслуговування')",
-    "Планове технічне обслуговування": "page.getByText('Планове технічне обслуговування')",
-    "Тип": "page.getByText('Тип')",
-    "Назва операції": "page.getByText('Назва операції')",
-    "Тривалість у хвилинах": "page.getByText('Тривалість у хвилинах')",
-    "Відповідальний": "page.getByText('Відповідальний')",
-    "Активно": "page.getByText('Активно')",
-    "Обладнання": "page.getByText('Обладнання')",
-    "Історія та завдання сервісного обслуговування": "page.getByText('Історія та завдання сервісного обслуговування')",
-    "Категорія обслуговування": "page.getByText('Категорія обслуговування')",
-    "Тип обслуговування": "page.getByText('Тип обслуговування')",
-    "Відповідальний за обслуговування": "page.getByText('Відповідальний за обслуговування')",
-    "Коментар до обслуговування": "page.getByText('Коментар до обслуговування')",
-    "Статус": "page.getByText('Статус')"
+  "buttons": {
+    "create": "page.getByRole('button', { name: 'Створити' })",
+    "save": "page.getByRole('button', { name: 'Зберегти' })",
+    "cancel": "page.getByRole('button', { name: 'Скасувати' })"
   }
 }

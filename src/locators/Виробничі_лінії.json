@@ -1,0 +1,7 @@
+{
+  "listPageUrl": "/0/Shell/#Section/GenProductionLines_ListPage",
+  "createButton": "page.getByRole('button', { name: 'Створити' })",
+  "nameInput": "page.getByRole('textbox', { name: 'Назва' })",
+  "activeCheckbox": "page.getByRole('checkbox', { name: 'Активна' })",
+  "saveButton": "page.getByRole('button', { name: 'Зберегти' })"
+}

@@ -259,14 +259,22 @@ export class BasePage {
     let tabPattern: RegExp;
 
     if (typeof tabName === 'string') {
-      if (tabName.toUpperCase().includes('ЗАГАЛЬНА ІНФОРМАЦІЯ')) {
-        tabPattern = /^ЗАГАЛЬНА ІНФОРМАЦІЯ$|^ГУ$/i;
+      const upper = tabName.toUpperCase();
+      if (upper.includes('ЗАГАЛЬНА ІНФОРМАЦІЯ') || upper.includes('GENERAL INFORMATION')) {
+        tabPattern = /^ЗАГАЛЬНА ІНФОРМАЦІЯ$|^ГУ$|GENERAL INFORMATION/i;
+      } else if (upper.includes('ЕТАПИ ТА ЗАВДАННЯ') || upper.includes('STAGES') || upper.includes('OPERATIONS')) {
+        tabPattern = /Етапи та завдання|Stages and tasks|Stages & tasks|Stages|OPERATIONS AND TASKS|Operations/i;
+      } else if (upper.includes('ТЕХНОЛОГІЧНА КАРТА') || upper.includes('PROCESS SHEET')) {
+        tabPattern = /ТЕХНОЛОГІЧНА КАРТА|PROCESS SHEET/i;
+      } else if (upper.includes('МАТЕРІАЛИ') || upper.includes('MATERIALS')) {
+        tabPattern = /Матеріали|Materials|Сировина/i;
       } else {
         tabPattern = new RegExp(`^${tabName}$`, 'i');
       }
     } else {
       tabPattern = tabName;
     }
+
 
     const leftArrow = this.page
       .locator(

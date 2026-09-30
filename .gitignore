@@ -25,3 +25,6 @@ custom_report.html
 .idea/
 *.iml
 .pytest_cache/
+artifacts/
+scratch/
+*.zip

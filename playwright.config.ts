@@ -37,7 +37,7 @@ export default defineConfig({
   },
 
   projects: [
-    // 1. Однократна авторизація для поточного сервера (main або main2)
+    // 1. Однократна авторизація для поточного сервера (main, main2 або preprod)
     {
       name: 'setup',
       testMatch: /e2e\/setup\/auth\.setup\.ts/,

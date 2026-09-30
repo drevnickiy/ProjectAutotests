@@ -1,65 +1,202 @@
 [
   {
-    "code": "RM-048",
-    "name": "Polyquaternium 44 (Luviquat UltraCare AT 1 BASF)",
-    "category": "",
+    "code": "XT-RM-001",
+    "name": "[XTEST] Вода деіонізована",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
   },
   {
-    "code": "RM-049",
-    "name": "RESPLANTA MACADAMIA MB",
-    "category": "",
+    "code": "XT-RM-002",
+    "name": "[XTEST] Spolapon AES 242/70",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
   },
   {
-    "code": "RM-050",
-    "name": "Водно-гліцериновий гідролізат протеїнів кератину",
-    "category": "",
+    "code": "XT-RM-003",
+    "name": "[XTEST] Mackam CAB 818",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
   },
   {
-    "code": "RM-051",
-    "name": "Гидролізат \"Протеїнів шовку\"",
-    "category": "",
+    "code": "XT-RM-004",
+    "name": "[XTEST] Plantapon SF",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
   },
   {
-    "code": "RM-052",
-    "name": "\"Pentylene Glycol\"",
-    "category": "",
+    "code": "XT-RM-005",
+    "name": "[XTEST] Сіль екстра",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
   },
   {
-    "code": "RM-053",
-    "name": "Hydrovance",
-    "category": "",
+    "code": "XT-RM-006",
+    "name": "[XTEST] Д-Пантенол 75%",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
   },
   {
-    "code": "RM-054",
-    "name": "\"ПЕГ- 40\" 98%",
-    "category": "",
+    "code": "XT-RM-007",
+    "name": "[XTEST] Гідролізат протеїнів шовку",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
   },
   {
-    "code": "RM-055",
-    "name": "Nipaguard PE 9010",
-    "category": "",
+    "code": "XT-RM-008",
+    "name": "[XTEST] Гідролізат протеїнів кератину",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
   },
   {
-    "code": "RM-056",
-    "name": "Віддушка Mango&Camellia 7446",
-    "category": "",
+    "code": "XT-RM-009",
+    "name": "[XTEST] Комплекс вітамінів A, E, C, B5",
+    "category": "Сировина",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-010",
+    "name": "[XTEST] Екстракт ромашки CO2",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-011",
+    "name": "[XTEST] Олія макадамії",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-012",
+    "name": "[XTEST] Олія аргани",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-013",
+    "name": "[XTEST] Консервант Nipaguard PE 9010",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-014",
+    "name": "[XTEST] Віддушка Mango & Camellia",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-015",
+    "name": "[XTEST] Віддушка Green Tea & Aloe",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-016",
+    "name": "[XTEST] Лимонна кислота розчин 20%",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-017",
+    "name": "[XTEST] Трилон Б (Динатрій ЕДТА)",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-RM-018",
+    "name": "[XTEST] Гліцерин дистильований 99.5%",
+    "category": "Сировина",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730"
+  },
+  {
+    "code": "XT-PM-001",
+    "name": "[XTEST] Флакон ПЕТ 250 мл прозорий",
+    "category": "Матеріали",
+    "unit": "штук",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "1825"
+  },
+  {
+    "code": "XT-PM-002",
+    "name": "[XTEST] Флакон ПЕТ 400 мл бурштин",
+    "category": "Матеріали",
+    "unit": "штук",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "1825"
+  },
+  {
+    "code": "XT-PM-003",
+    "name": "[XTEST] Флакон-спрей ПЕТ 150 мл білий",
+    "category": "Матеріали",
+    "unit": "штук",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "1825"
+  },
+  {
+    "code": "XT-PM-004",
+    "name": "[XTEST] Кришка диск-топ 24/410 біла",
+    "category": "Матеріали",
+    "unit": "штук",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "1825"
+  },
+  {
+    "code": "XT-PM-005",
+    "name": "[XTEST] Дозатор нажимний 24/410 помпа",
+    "category": "Матеріали",
+    "unit": "штук",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "1825"
+  },
+  {
+    "code": "XT-PM-006",
+    "name": "[XTEST] Етикетка самоклейна",
+    "category": "Матеріали",
+    "unit": "штук",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "1825"
+  },
+  {
+    "code": "XT-PM-007",
+    "name": "[XTEST] Гофроящик чотирьохклапанний",
+    "category": "Матеріали",
+    "unit": "штук",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "1825"
   }
 ]

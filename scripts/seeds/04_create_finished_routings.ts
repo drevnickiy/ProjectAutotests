@@ -36,8 +36,8 @@ test.describe('04. Створення техкарт для готової пр�
       if (config.productUrl) {
         await loginPage.open(config.productUrl);
         await loginPage.login();
-        await page.waitForLoadState('domcontentloaded');
-        await page.waitForTimeout(3000);
+        await page.locator('crt-app-header, .crt-header, mat-toolbar, .user-profile, crt-tab-header, .mat-mdc-tab-header').first().waitFor({ state: 'visible', timeout: 45000 }).catch(() => {});
+        await page.waitForTimeout(4000);
       } else if (config.productName) {
         // Відкриваємо розділ Продукти та знаходимо потрібний готовий продукт
         await loginPage.open('/0/Shell/#Section/Products_ListPage');
@@ -45,31 +45,40 @@ test.describe('04. Створення техкарт для готової пр�
         await page.waitForLoadState('domcontentloaded');
         await page.waitForTimeout(3000);
 
-        const prefix = config.productName.split(' ')[0] || config.productName;
-        console.log(`🔍 Пошук продукту за префіксом "${prefix}"...`);
+        const searchTerm = config.productName.includes('|') ? config.productName.split('|')[1].trim() : config.productName;
+        console.log(`🔍 Пошук продукту за назвою/кодом "${searchTerm}"...`);
+
+        const searchInput = page.locator('crt-search-input input, input[placeholder*="Пошук"], input[aria-label*="Пошук"]').first();
+        if (await searchInput.isVisible({ timeout: 4000 }).catch(() => false)) {
+          await searchInput.fill(searchTerm);
+          await page.keyboard.press('Enter');
+          await page.waitForTimeout(2500);
+        }
 
         const prodRow = page.locator('[role="gridcell"] a, .crt-link, [role="row"] a')
-          .filter({ hasText: prefix })
+          .filter({ hasText: searchTerm })
           .first();
 
-        await prodRow.waitFor({ state: 'visible', timeout: 15000 });
+        await prodRow.waitFor({ state: 'visible', timeout: 25000 });
         await prodRow.click();
         await page.waitForLoadState('domcontentloaded');
         await page.waitForTimeout(3000);
       }
 
-      // 2. Перехід на вкладку "ТЕХНОЛОГІЧНА КАРТА"
-      console.log(`[Test] Перехід на вкладку "ТЕХНОЛОГІЧНА КАРТА"...`);
-      const routingTab = page.locator('[role="tab"], .mat-tab-label, .mat-mdc-tab')
-        .filter({ hasText: /^ТЕХНОЛОГІЧНА КАРТА$/i })
-        .first();
+      // 2. Перехід на вкладку «ТЕХНОЛОГІЧНА КАРТА / PROCESS SHEET»
+      console.log(`[Test] Перехід на вкладку "ТЕХНОЛОГІЧНА КАРТА / PROCESS SHEET"...`);
+      const routingTab = page.getByRole('tab', { name: /PROCESS SHEET|ТЕХНОЛОГІЧНА КАРТА/i }).first()
+        .or(page.locator('[role="tab"]').filter({ hasText: /PROCESS SHEET|ТЕХНОЛОГІЧНА КАРТА/i }).first());
 
-      await routingTab.waitFor({ state: 'visible', timeout: 15000 });
+      await routingTab.waitFor({ state: 'visible', timeout: 45000 });
+      await routingTab.scrollIntoViewIfNeeded().catch(() => {});
       await routingTab.click();
-      await page.waitForTimeout(2000);
+      await page.waitForTimeout(3000);
 
       // 3. Відкриваємо або створюємо ТК
-      const existingRouting = page.locator('crt-expansion-panel').filter({ hasText: /Технологічна карта/i })
+      const panel = page.locator('crt-expansion-panel, [role="tabpanel"]').filter({ hasText: /Process sheet|Технологічна карта/i }).first()
+        .or(page.locator('crt-expansion-panel').first());
+      const existingRouting = panel
         .locator('a, [role="gridcell"] a, .crt-link')
         .filter({ hasText: /ТК-|TK-/i })
         .first();
@@ -81,25 +90,29 @@ test.describe('04. Створення техкарт для готової пр�
         console.log(`[Test] Відкриваємо існуючу ТК "${linkText}"...`);
         await existingRouting.click();
       } else {
-        console.log(`[Test] Клік по кнопці створення ТК у секції "Технологічна карта"...`);
-        const addBtn = page.locator('crt-expansion-panel').filter({ hasText: /Технологічна карта/i })
-          .locator('crt-button[icon="add"] button, [icon="add"] button, button[title*="Новий"], button[aria-label*="Новий"]')
+        console.log(`[Test] Клік по кнопці створення ТК у секції "Технологічна карта / Process Sheet"...`);
+        const addBtn = page.getByRole('button', { name: 'Новий', exact: true })
+          .or(page.locator('crt-expansion-panel').filter({ hasText: /Process sheet|Технологічна карта/i }).getByRole('button', { name: 'New', exact: true }))
           .first();
 
-        await addBtn.waitFor({ state: 'visible', timeout: 10000 });
+        await addBtn.waitFor({ state: 'visible', timeout: 15000 });
         await addBtn.click();
+
+        // Очікуємо переходу на сторінку створення ТК (GenProductionRouting_FormPage)
+        await page.waitForURL(/.*GenProductionRouting_FormPage.*/, { timeout: 35000 }).catch(() => {});
+        await page.waitForLoadState('domcontentloaded');
         await page.waitForTimeout(2500);
 
         // Вводимо назву ТК
-        const nameInput = page.getByRole('textbox', { name: 'Назва' })
-          .or(page.locator('input[aria-label="Назва"]'))
+        const nameInput = page.locator('input[aria-label="Name"], input[aria-label="Назва"]')
+          .or(page.getByRole('textbox', { name: /Name|Назва/i }))
           .first();
-        if (await nameInput.isVisible({ timeout: 4000 }).catch(() => false)) {
-          await nameInput.click();
-          await nameInput.fill(config.name);
-          await page.waitForTimeout(300);
-        }
+        await nameInput.waitFor({ state: 'visible', timeout: 35000 });
+        await nameInput.click();
+        await nameInput.fill(config.name);
+        await page.waitForTimeout(500);
       }
+
 
       await page.waitForLoadState('domcontentloaded');
       await page.waitForTimeout(3000);
@@ -111,18 +124,18 @@ test.describe('04. Створення техкарт для готової пр�
 
       // 5. Додавання типових етапів
       for (const stage of config.stages) {
-        console.log(`[Test] Створення етапу ${stage.number}: ${stage.name}...`);
+        console.log(`[Test] Створення етапу: ${stage.name}...`);
         await routingPage.addStage(stage);
       }
 
       // 6. Додавання типових завдань
       for (const task of config.tasks) {
-        console.log(`[Test] Створення завдання: ${task.name} (${task.taskType}, ${task.equipmentType}, ${task.hours} год)...`);
+        console.log(`[Test] Створення завдання: ${task.name} (${task.taskType || 'Виробниче завдання'}, ${task.equipmentType || ''}, ${task.duration || task.hours || ''})...`);
         await routingPage.addTask(task);
       }
 
       // Скріншот перед фінальним збереженням (всі етапи та завдання видно)
-      const artifactDir = '/Users/bogdansunday/.gemini/antigravity-ide/brain/275d5a89-b865-4c99-a2bc-897cc221b635';
+      const artifactDir = '/Users/bogdansunday/.gemini/antigravity-ide/brain/2e2d16a7-14a3-4d3c-817a-a9e8af64be23';
       const screenshotPath = path.join(artifactDir, `created_routing_${config.id}.png`);
       await page.waitForTimeout(1000);
       await page.screenshot({ path: screenshotPath, fullPage: false });
@@ -130,6 +143,8 @@ test.describe('04. Створення техкарт для готової пр�
 
       // 7. Фінальне збереження картки
       console.log(`[Test] Фінальне збереження картки...`);
+      await routingPage.setStatus('В роботі');
+      await routingPage.setValidityDates();
       await routingPage.saveCard();
 
       console.log(`🎉 Техкарту готової продукції "${config.name}" успішно створено та збережено!`);

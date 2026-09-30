@@ -13,46 +13,75 @@ interface SemiFinishedProductData {
   description: string;
 }
 
+const SYNONYMS_MAP: Record<string, string[]> = {
+  'Сировина': ['Raw Materials', 'Сировина'],
+  'Напівфабрикат': ['Semi-finished product', 'Напівфабрикат'],
+  'Готова продукція': ['Finished product', 'Готова продукція'],
+  'Матеріали': ['Матеріали', 'Materials'],
+  'кілограм': ['kilogram', 'кілограм', 'кг'],
+  'штук': ['pieces', 'штук', 'шт'],
+  'FEFO': ['FEFO'],
+  'FIFO': ['FIFO']
+};
+
 async function selectDropdown(page: Page, label: string, optionText: string) {
   console.log(`🔍 [КОМБОБОКС "${label}"] Встановлення значення "${optionText}"...`);
 
-  const cb = page.getByRole('combobox', { name: new RegExp(label, 'i') })
-    .or(page.locator('crt-combobox, mat-form-field, crt-field').filter({ hasText: new RegExp(label, 'i') }).getByRole('combobox'))
+  const input = page.locator(`input[aria-label*="${label}" i]`)
+    .or(page.getByRole('combobox', { name: new RegExp(label, 'i') }))
+    .or(page.locator('crt-combobox, mat-form-field, crt-field').filter({ hasText: new RegExp(label, 'i') }).locator('input'))
     .first();
 
-  if (!await cb.isVisible({ timeout: 5000 }).catch(() => false)) {
+  if (!await input.isVisible({ timeout: 5000 }).catch(() => false)) {
     console.log(`   ⚠️ [${label}] Комбобокс не знайдено`);
     return;
   }
 
-  await cb.click();
+  await input.scrollIntoViewIfNeeded().catch(() => { });
+  await input.click();
   await page.waitForTimeout(400);
-  await cb.fill(optionText);
-  await page.waitForTimeout(800);
 
-  const targetOption = page.locator('.cdk-overlay-pane mat-option, [role="listbox"] [role="option"]')
-    .filter({ hasNotText: /Додати новий|\+|Створити|crt-combobox-search/i })
-    .filter({ hasText: new RegExp(optionText.trim(), 'i') })
-    .first();
+  const candidates = [optionText, ...(SYNONYMS_MAP[optionText] || [])];
+  let selected = false;
 
-  if (await targetOption.isVisible({ timeout: 3000 }).catch(() => false)) {
-    const targetText = (await targetOption.innerText().catch(() => '')).trim();
-    console.log(`   ✅ [${label}] Обрано: "${targetText}"`);
-    await targetOption.click();
-  } else {
-    const firstOption = page.locator('.cdk-overlay-pane mat-option:not([aria-disabled="true"]):not(.mdc-list-item--disabled)')
-      .filter({ hasNotText: /Додати новий|\+|Створити|crt-combobox-search/i })
+  for (const candidate of candidates) {
+    const targetOption = page.locator('.cdk-overlay-pane mat-option, [role="listbox"] [role="option"]')
+      .filter({ hasNotText: /Додати новий|\+|Створити|crt-combobox-search|create/i })
+      .filter({ hasText: new RegExp(`^\\s*${candidate.trim()}\\s*$`, 'i') })
       .first();
-    if (await firstOption.isVisible({ timeout: 2000 }).catch(() => false)) {
-      const text = (await firstOption.innerText().catch(() => '')).trim();
-      console.log(`   ✅ [${label}] Обрано першу опцію: "${text}"`);
-      await firstOption.click();
-    } else {
-      await page.keyboard.press('Escape').catch(() => { });
+
+    if (await targetOption.isVisible({ timeout: 1500 }).catch(() => false)) {
+      const text = (await targetOption.innerText().catch(() => '')).trim();
+      console.log(`   ✅ [${label}] Обрано: "${text}"`);
+      await targetOption.click();
+      selected = true;
+      break;
     }
   }
 
-  await page.waitForTimeout(500);
+  if (!selected) {
+    for (const candidate of candidates) {
+      const targetOption = page.locator('.cdk-overlay-pane mat-option, [role="listbox"] [role="option"]')
+        .filter({ hasNotText: /Додати новий|\+|Створити|crt-combobox-search|create/i })
+        .filter({ hasText: new RegExp(candidate.trim(), 'i') })
+        .first();
+
+      if (await targetOption.isVisible({ timeout: 1500 }).catch(() => false)) {
+        const text = (await targetOption.innerText().catch(() => '')).trim();
+        console.log(`   ✅ [${label}] Обрано (partial): "${text}"`);
+        await targetOption.click();
+        selected = true;
+        break;
+      }
+    }
+  }
+
+  if (!selected) {
+    console.log(`   ⚠️ [${label}] Не знайдено опції для "${optionText}", закриваємо список`);
+    await page.keyboard.press('Escape').catch(() => { });
+  }
+
+  await page.waitForTimeout(400);
 }
 
 test.describe('01. Створення напівфабрикатів (Semi-finished Products)', () => {
@@ -72,24 +101,24 @@ test.describe('01. Створення напівфабрикатів (Semi-finis
       console.log(`======================================================`);
 
       // 1. Відкриття прямої форми створення продукту
-      await loginPage.open('https://xlab-analyst-main.poligon.crmgenesis.com/0/Shell/#Card/Products_FormPage/add');
+      await loginPage.open('/0/Shell/#Card/Products_FormPage/add');
       await loginPage.login();
       await page.waitForLoadState('domcontentloaded');
       await page.waitForTimeout(3000);
 
-      // 2. Заповнення назви
-      const nameInput = page.getByRole('textbox', { name: /Назва повна|Назва/i })
-        .or(page.locator('crt-field, mat-form-field').filter({ hasText: /Назва повна|Назва/i }).locator('input'))
+      // 2. Заповнення назви (Ліва панель)
+      const nameInput = page.locator('input[aria-label="Name"], input[placeholder*="Specify product name"], input[aria-label*="Назва" i]')
+        .or(page.getByRole('textbox', { name: /Name|Назва/i }))
         .first();
-      await nameInput.waitFor({ state: 'visible', timeout: 15000 });
+      await nameInput.waitFor({ state: 'visible', timeout: 35000 });
       await nameInput.click();
       await nameInput.fill(prod.name);
       await page.waitForTimeout(500);
 
       // 3. Заповнення коду
       if (prod.code) {
-        const codeInput = page.getByRole('textbox', { name: /Код|Артикул/i })
-          .or(page.locator('input[aria-label*="Код"], input[aria-label*="Артикул"]'))
+        const codeInput = page.locator('input[aria-label="Article number"], input[aria-label*="Код" i], input[aria-label*="Артикул" i]')
+          .or(page.getByRole('textbox', { name: /Article number|Code|Код|Артикул/i }))
           .first();
         if (await codeInput.isVisible({ timeout: 3000 }).catch(() => false)) {
           await codeInput.click();
@@ -100,18 +129,28 @@ test.describe('01. Створення напівфабрикатів (Semi-finis
 
       // 4. Вибір Категорії
       if (prod.category) {
-        await selectDropdown(page, 'Категорія', prod.category);
+        await selectDropdown(page, 'Category|Категорія', prod.category);
       }
 
-      // 5. Вибір Типу контролю партії
+      // 5. Обов'язкове перемикання на вкладку «GENERAL INFORMATION / ЗАГАЛЬНА ІНФОРМАЦІЯ»
+      console.log('📑 Перехід на вкладку "GENERAL INFORMATION / ЗАГАЛЬНА ІНФОРМАЦІЯ"...');
+      const genInfoTab = page.locator('[role="tab"], .mat-mdc-tab, .mat-tab-label')
+        .filter({ hasText: /GENERAL INFORMATION|ЗАГАЛЬНА ІНФОРМАЦІЯ/i })
+        .first();
+      if (await genInfoTab.isVisible({ timeout: 3000 }).catch(() => false)) {
+        await genInfoTab.click();
+        await page.waitForTimeout(1000);
+      }
+
+      // 6. Вибір Типу контролю партії (FEFO)
       if (prod.batchControl) {
-        await selectDropdown(page, 'Тип контролю партії', prod.batchControl);
+        await selectDropdown(page, 'Batch control type|Тип контролю', prod.batchControl);
       }
 
-      // 6. Термін придатності (днів)
+      // 7. Термін придатності (днів)
       if (prod.shelfLifeDays) {
-        const shelfLifeInput = page.getByRole('textbox', { name: /Термін придатності \(днів\)|Термін придатності/i })
-          .or(page.locator('crt-number-input, crt-field, mat-form-field').filter({ hasText: /Термін придатності \(днів\)|Термін придатності/i }).locator('input'))
+        const shelfLifeInput = page.locator('input[aria-label="Shelf life days"], input[aria-label*="Термін придатності" i]')
+          .or(page.getByRole('textbox', { name: /Shelf life days|Термін придатності/i }))
           .first();
         if (await shelfLifeInput.isVisible({ timeout: 3000 }).catch(() => false)) {
           await shelfLifeInput.click();
@@ -120,24 +159,24 @@ test.describe('01. Створення напівфабрикатів (Semi-finis
         }
       }
 
-      // 7. Вибір Одиниці виміру
+      // 8. Вибір Одиниці виміру (кілограм / kilogram)
       if (prod.unit) {
-        await selectDropdown(page, 'Одиниця виміру', prod.unit);
+        await selectDropdown(page, 'Units|Unit of measure|Одиниця виміру', prod.unit);
       }
 
       await page.waitForTimeout(1000);
 
-      // 8. Збереження
-      console.log('   💾 Збереження картки напівфабрикату (кнопка "Зберегти")...');
-      const saveBtn = page.getByRole('button', { name: 'Зберегти', exact: true })
-        .or(page.locator('button').filter({ hasText: /^Зберегти$/i }))
+      // 9. Збереження
+      console.log('   💾 Збереження картки напівфабрикату (кнопка "Save / Зберегти")...');
+      const saveBtn = page.getByRole('button', { name: /Save|Зберегти/i })
+        .or(page.locator('button').filter({ hasText: /^(Save|Зберегти)$/i }))
         .first();
       await saveBtn.waitFor({ state: 'visible', timeout: 5000 });
       await saveBtn.click({ force: true });
       await page.waitForTimeout(4000);
 
-      // 9. Скріншот збереженої картки
-      const artifactDir = '/Users/bogdansunday/.gemini/antigravity-ide/brain/275d5a89-b865-4c99-a2bc-897cc221b635';
+      // 10. Скріншот збереженої картки
+      const artifactDir = '/Users/bogdansunday/.gemini/antigravity-ide/brain/2e2d16a7-14a3-4d3c-817a-a9e8af64be23';
       const screenshotPath = path.join(artifactDir, `created_semi_${prod.code}.png`);
       await page.screenshot({ path: screenshotPath, fullPage: false });
 
@@ -146,3 +185,4 @@ test.describe('01. Створення напівфабрикатів (Semi-finis
     });
   }
 });
+

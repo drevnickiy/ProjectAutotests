@@ -6,16 +6,32 @@ dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 export const ENVIRONMENTS: Record<string, string> = {
   main: 'https://xlab-analyst-main.poligon.crmgenesis.com',
   main2: 'https://xlab-analyst-main2.poligon.crmgenesis.com',
+  preprod: 'https://xlab-preprod.poligon.crmgenesis.com',
+  main3: 'https://xlab-preprod.poligon.crmgenesis.com',
+  analytics2: 'https://xlab-analytics2.poligon.crmgenesis.com',
+  '3': 'https://xlab-preprod.poligon.crmgenesis.com',
 };
 
 /**
- * Отримує поточне середовище (main або main2)
+ * Отримує поточне середовище (main, main2, analytics2 або preprod)
  */
 export function getCurrentEnv(): string {
-  if (process.env.ENV && ENVIRONMENTS[process.env.ENV]) {
-    return process.env.ENV;
+  if (process.env.ENV) {
+    const rawEnv = process.env.ENV.trim().toLowerCase();
+    if (rawEnv === 'analytics2') return 'analytics2';
+    if (rawEnv === '3' || rawEnv === 'main3' || rawEnv === 'preprod') return 'preprod';
+    if (rawEnv === '2' || rawEnv === 'main2') return 'main2';
+    if (rawEnv === '1' || rawEnv === 'main') return 'main';
+    if (ENVIRONMENTS[process.env.ENV]) {
+      return process.env.ENV;
+    }
+    if (ENVIRONMENTS[rawEnv]) {
+      return rawEnv;
+    }
   }
   if (process.env.BASE_URL) {
+    if (process.env.BASE_URL.includes('analytics2')) return 'analytics2';
+    if (process.env.BASE_URL.includes('preprod')) return 'preprod';
     if (process.env.BASE_URL.includes('main2')) return 'main2';
     if (process.env.BASE_URL.includes('main')) return 'main';
   }

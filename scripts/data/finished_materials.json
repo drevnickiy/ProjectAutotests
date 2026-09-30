@@ -1,19 +1,437 @@
 [
   {
-    "productName": "Шампунь для волосся \"Інтенсивний догляд\" Hydrasence 400 мл",
-    "productUrl": "/0/Shell/#Card/Products_FormPage/edit/ea62e8aa-296e-4ad9-9473-acf3415fd185",
+    "productName": "[XTEST] ГП Міцелярна вода Pure Clean 150мл | XT-GP-001",
+    "routingName": "ТК-ГП | Міцелярна вода Pure Clean 150мл",
     "materials": [
       {
-        "materialName": "Тара+НФ",
-        "unit": "штук",
-        "rate": "1.0000",
-        "comment": "Напівфабрикат"
+        "materialName": "[XTEST] Вода деіонізована",
+        "unit": "кілограм",
+        "rate": "0.9000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
       },
       {
-        "materialName": "Етикетка",
+        "materialName": "[XTEST] Д-Пантенол 75%",
+        "unit": "кілограм",
+        "rate": "0.1000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Флакон-спрей ПЕТ 150 мл білий",
         "unit": "штук",
-        "rate": "1.0129",
-        "comment": "Етикетка"
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Тонік для обличчя Herbal 150мл | XT-GP-002",
+    "routingName": "ТК-ГП | Тонік для обличчя Herbal 150мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Маса тоніка заспокійливого | XT-NF-014",
+        "unit": "кілограм",
+        "rate": "0.1500",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Флакон-спрей ПЕТ 150 мл білий",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Шампунь базовий Daily 250мл | XT-GP-003",
+    "routingName": "ТК-ГП | Шампунь базовий Daily 250мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Маса шампуню зволожуючого | XT-NF-009",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 250 мл прозорий",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Кришка диск-топ 24/410 біла",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Бальзам для волосся Silk 250мл | XT-GP-004",
+    "routingName": "ТК-ГП | Бальзам для волосся Silk 250мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Маса бальзаму живильного | XT-NF-011",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 250 мл прозорий",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Кришка диск-топ 24/410 біла",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Шампунь 250мл два НФ DuoActive | XT-GP-005",
+    "routingName": "ТК-ГП | Шампунь 250мл два НФ DuoActive",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ ПАВ-основа шампуню | XT-NF-002",
+        "unit": "кілограм",
+        "rate": "0.1000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] НФ Вітамінно-активний премікс | XT-NF-005",
+        "unit": "кілограм",
+        "rate": "0.1500",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 250 мл прозорий",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Дозатор нажимний 24/410 помпа",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Гель 400мл два НФ AquaFresh | XT-GP-006",
+    "routingName": "ТК-ГП | Гель 400мл два НФ AquaFresh",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ ПАВ-основа шампуню | XT-NF-002",
+        "unit": "кілограм",
+        "rate": "0.2000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] НФ Водна фаза підготовлена | XT-NF-001",
+        "unit": "кілограм",
+        "rate": "0.2000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 400 мл бурштин",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Дозатор нажимний 24/410 помпа",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Кондиціонер TrioPower 250мл | XT-GP-007",
+    "routingName": "ТК-ГП | Кондиціонер TrioPower 250мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Емульсійна база кондиціонера | XT-NF-003",
+        "unit": "кілограм",
+        "rate": "0.1500",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] НФ Масляна фаза емульгуюча | XT-NF-004",
+        "unit": "кілограм",
+        "rate": "0.0600",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] НФ Вітамінно-активний премікс | XT-NF-005",
+        "unit": "кілограм",
+        "rate": "0.0400",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 250 мл прозорий",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Кришка диск-топ 24/410 біла",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Крем-мило TripleCare 400мл | XT-GP-008",
+    "routingName": "ТК-ГП | Крем-мило TripleCare 400мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ ПАВ-основа шампуню | XT-NF-002",
+        "unit": "кілограм",
+        "rate": "0.1600",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] НФ Масляна фаза емульгуюча | XT-NF-004",
+        "unit": "кілограм",
+        "rate": "0.1200",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] НФ Відновлюючий комплекс протеїнів | XT-NF-006",
+        "unit": "кілограм",
+        "rate": "0.1200",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 400 мл бурштин",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Дозатор нажимний 24/410 помпа",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Шампунь 3-рівні вкладеності 250мл | XT-GP-009",
+    "routingName": "ТК-ГП | Шампунь 3-рівні вкладеності 250мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Маса шампуню відновлюючого | XT-NF-010",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 250 мл прозорий",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Дозатор нажимний 24/410 помпа",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Еліксир 4-рівні вкладеності 150мл | XT-GP-010",
+    "routingName": "ТК-ГП | Еліксир 4-рівні вкладеності 150мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Комплексна маса преміум | XT-NF-015",
+        "unit": "кілограм",
+        "rate": "0.1500",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] Флакон-спрей ПЕТ 150 мл білий",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Шампунь Агрегат-А 250мл | XT-GP-011",
+    "routingName": "ТК-ГП | Шампунь Агрегат-А 250мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Універсальна основа Агрегат | XT-NF-017",
+        "unit": "кілограм",
+        "rate": "0.2500",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": true
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 250 мл прозорий",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Кришка диск-топ 24/410 біла",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      }
+    ]
+  },
+  {
+    "productName": "[XTEST] ГП Гель Агрегат-Б 400мл | XT-GP-012",
+    "routingName": "ТК-ГП | Гель Агрегат-Б 400мл",
+    "materials": [
+      {
+        "materialName": "[XTEST] НФ Універсальна основа Агрегат | XT-NF-017",
+        "unit": "кілограм",
+        "rate": "0.4000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Флакон ПЕТ 400 мл бурштин",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 2: Фасування та укупорка",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Дозатор нажимний 24/410 помпа",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
+      },
+      {
+        "materialName": "[XTEST] Етикетка самоклейна",
+        "unit": "штук",
+        "rate": "1.0000",
+        "stageName": "Етап 3: Етикетування та пакування",
+        "isHardLink": false
       }
     ]
   }

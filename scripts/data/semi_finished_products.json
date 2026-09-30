@@ -1,11 +1,164 @@
 [
   {
-    "code": "VMER1390",
-    "name": "Тара (150мл)+НФ Мультиспрей термозахист для волосся 16в1 Hydrasence 150 мл",
+    "code": "XT-NF-001",
+    "name": "[XTEST] НФ Водна фаза підготовлена | XT-NF-001",
     "category": "Напівфабрикат",
-    "unit": "штук",
+    "unit": "кілограм",
     "batchControl": "FEFO",
     "shelfLifeDays": "730",
-    "description": "Тара (150мл)+НФ Мультиспрей термозахист для волосся 16в1 Hydrasence 150 мл"
+    "description": "НФ Водна фаза підготовлена"
+  },
+  {
+    "code": "XT-NF-002",
+    "name": "[XTEST] НФ ПАВ-основа шампуню | XT-NF-002",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ ПАВ-основа шампуню концентрована"
+  },
+  {
+    "code": "XT-NF-003",
+    "name": "[XTEST] НФ Емульсійна база кондиціонера | XT-NF-003",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Емульсійна база кондиціонера"
+  },
+  {
+    "code": "XT-NF-004",
+    "name": "[XTEST] НФ Масляна фаза емульгуюча | XT-NF-004",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Масляна фаза емульгуюча"
+  },
+  {
+    "code": "XT-NF-005",
+    "name": "[XTEST] НФ Вітамінно-активний премікс | XT-NF-005",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Вітамінно-активний премікс"
+  },
+  {
+    "code": "XT-NF-006",
+    "name": "[XTEST] НФ Відновлюючий комплекс протеїнів | XT-NF-006",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Відновлюючий комплекс протеїнів"
+  },
+  {
+    "code": "XT-NF-007",
+    "name": "[XTEST] НФ Рослинний екстракт концентрат | XT-NF-007",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Рослинний екстракт концентрат"
+  },
+  {
+    "code": "XT-NF-008",
+    "name": "[XTEST] НФ Базовий міцелярний розчин | XT-NF-008",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Базовий міцелярний розчин"
+  },
+  {
+    "code": "XT-NF-009",
+    "name": "[XTEST] НФ Маса шампуню зволожуючого | XT-NF-009",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Маса шампуню зволожуючого"
+  },
+  {
+    "code": "XT-NF-010",
+    "name": "[XTEST] НФ Маса шампуню відновлюючого | XT-NF-010",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Маса шампуню відновлюючого"
+  },
+  {
+    "code": "XT-NF-011",
+    "name": "[XTEST] НФ Маса бальзаму живильного | XT-NF-011",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Маса бальзаму живильного"
+  },
+  {
+    "code": "XT-NF-012",
+    "name": "[XTEST] НФ Маса кондиціонера протеїнова | XT-NF-012",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Маса кондиціонера протеїнова"
+  },
+  {
+    "code": "XT-NF-013",
+    "name": "[XTEST] НФ Маса гелю для душу AquaFresh | XT-NF-013",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Маса гелю для душу AquaFresh"
+  },
+  {
+    "code": "XT-NF-014",
+    "name": "[XTEST] НФ Маса тоніка заспокійливого | XT-NF-014",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Маса тоніка заспокійливого"
+  },
+  {
+    "code": "XT-NF-015",
+    "name": "[XTEST] НФ Комплексна маса преміум | XT-NF-015",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Комплексна маса преміум-шампуню"
+  },
+  {
+    "code": "XT-NF-016",
+    "name": "[XTEST] НФ Маса маски глибокого відновл. | XT-NF-016",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Маса маски глибокого відновлення"
+  },
+  {
+    "code": "XT-NF-017",
+    "name": "[XTEST] НФ Універсальна основа Агрегат | XT-NF-017",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Універсальна основа Агрегат для перевірки злиття"
+  },
+  {
+    "code": "XT-NF-018",
+    "name": "[XTEST] НФ Премікс нано-вітамінів | XT-NF-018",
+    "category": "Напівфабрикат",
+    "unit": "кілограм",
+    "batchControl": "FEFO",
+    "shelfLifeDays": "730",
+    "description": "НФ Премікс нано-вітамінів 4-й рівень"
   }
 ]
